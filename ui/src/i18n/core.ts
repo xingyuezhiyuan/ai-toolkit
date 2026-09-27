@@ -1,10 +1,14 @@
 import type { Dict } from './types';
 
 const NUM_RE = /\d[\d,]*(?:\.\d+)?/g;
+// Slots: a quoted phrase collapses to "#" (quotes kept — extraction emits them this way);
+// numbers collapse to '#'. Values are captured with the same alternation, quoted whole first.
+const SLOT_VALUES_RE = /"[^"]*"|\d[\d,]*(?:\.\d+)?/g;
 
-/** Normalize numbers to '#' and collapse whitespace — the key of dict.templates. */
+/** Normalize number/quoted-phrase slots to '#' and collapse whitespace — the key of dict.templates. */
 export function skeleton(text: string): string {
   return text
+    .replace(/"[^"]*"/g, '"#"')
     .replace(NUM_RE, '#')
     .replace(/\s+/g, ' ')
     .trim();
@@ -30,7 +34,9 @@ export function lookup(dict: Dict, raw: string): LookupResult | null {
   const sk = skeleton(trimmed);
   const tpl = dict.templates[sk];
   if (tpl !== undefined) {
-    const values = trimmed.match(NUM_RE) ?? [];
+    const values = (trimmed.match(SLOT_VALUES_RE) ?? []).map(v =>
+      v.startsWith('"') ? v.slice(1, -1) : v
+    );
     let ok = true;
     const filled = tpl.replace(/\{(\d+)\}/g, (_, i) => {
       const v = values[Number(i)];

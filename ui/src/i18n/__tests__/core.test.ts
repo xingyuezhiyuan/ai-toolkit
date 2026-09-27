@@ -13,9 +13,10 @@ const dict: Dict = {
 };
 
 describe('skeleton', () => {
-  it('normalizes numbers and whitespace', () => {
+  it('normalizes numbers, whitespace and quoted phrases', () => {
     expect(skeleton('delete   1,234 jobs')).toBe('delete # jobs');
     expect(skeleton('step 12.5 of 100')).toBe('step # of #');
+    expect(skeleton('stop the job "flux 甜妹 12"?')).toBe('stop the job "#"?');
   });
 });
 
@@ -40,6 +41,15 @@ describe('lookup', () => {
   });
   it('returns null on no match', () => {
     expect(lookup(dict, 'zzz totally unknown')).toBeNull();
+  });
+  it('quoted-phrase slot backfills without the surrounding quotes', () => {
+    const qd: Dict = {
+      exact: {},
+      templates: { 'Delete "#" to free?': '删除「{0}」以释放空间？' },
+      allowEnglish: [],
+    };
+    const r = lookup(qd, 'Delete "my dataset 3" to free?');
+    expect(r!.translation).toBe('删除「my dataset 3」以释放空间？');
   });
 });
 
