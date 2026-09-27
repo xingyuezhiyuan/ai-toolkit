@@ -138,7 +138,6 @@ const zh: Dict = {
     'Drop more files to add to queue': '继续拖入文件以加入队列',
     'Drop the image here...': '将图片拖到这里…',
     'Duplicate Dataset': '复制数据集',
-    'Edit caption &amp; boxes': '编辑标注与边框',
     'Edit caption & boxes': '编辑标注与边框',
     'Edit Prompt': '编辑 Prompt',
     'Edit Training Job': '编辑训练任务',
@@ -750,7 +749,6 @@ const zh: Dict = {
     'chunks',
     'multiline',
     'number',
-    '&nbsp;',
     'Ctrl/Cmd + Enter',
     // injected uPlot legend css
     '.uplot, .uplot * { font-family: inherit; } .uplot .u-legend { color: rgba(# # # #); font-size: #px; margin-top: #px; } .uplot .u-legend th, .uplot .u-legend td { color: rgba(# # # #); } .uplot .u-legend .u-marker { border-radius: #px; } .uplot .u-select { background: rgba(# # # #); border: #px solid rgba(# # # #); }',

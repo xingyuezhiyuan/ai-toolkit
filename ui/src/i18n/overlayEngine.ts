@@ -112,6 +112,7 @@ export function watch(
 ): WatchHandle {
   let queued = false;
   let applying = false;
+  let timer: ReturnType<typeof setTimeout> | undefined;
   const applyNow = () => {
     applying = true;
     observer.takeRecords(); // drop our own mutations from this batch
@@ -122,7 +123,7 @@ export function watch(
     if (applying || queued) return;
     queued = true;
     // setTimeout (not rAF): hidden/background tabs pause rAF; timers still fire (clamped).
-    setTimeout(() => {
+    timer = setTimeout(() => {
       if (!queued) return; // a synchronous requestReapply already handled the batch
       queued = false;
       applyNow();
@@ -137,7 +138,10 @@ export function watch(
   });
   applyAll(root, getLang(), getDict(), stats);
   return {
-    stop: () => observer.disconnect(),
+    stop: () => {
+      observer.disconnect();
+      if (timer !== undefined) clearTimeout(timer);
+    },
     requestReapply: () => {
       queued = false;
       applyNow();

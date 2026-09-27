@@ -18,7 +18,7 @@ let fail = 0;
 const allTemplateHits = new Set();
 for (const r of ROUTES) {
   await page.goto(BASE + r, { waitUntil: 'domcontentloaded' });
-  await page.waitForTimeout(4000); // allow settings fetch + rAF translation passes
+  await page.waitForTimeout(4000); // allow settings fetch + debounced translation passes
   const misses = await page.evaluate(() => window.__i18nMisses || []);
   const hits = await page.evaluate(() => window.__i18nTemplateHits || []);
   hits.forEach(h => allTemplateHits.add(h));

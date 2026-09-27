@@ -28,11 +28,9 @@ describe('zh.ts template lint', () => {
 
   it('translations obey the core glossary: no forbidden renderings', () => {
     const bad: string[] = [];
-    const forbidden = ['提示词', '采样（器|例）错误']; // prompt must stay English
     for (const [key, value] of Object.entries({ ...zh.exact, ...zh.templates })) {
-      for (const f of forbidden.slice(0, 1)) {
-        if (value.includes(f) && !key.includes(f)) bad.push(`${key} -> ${value}`);
-      }
+      // prompt must stay English in translations
+      if (value.includes('提示词')) bad.push(`${key} -> ${value}`);
       // 'Sampler' must be 采样器, never 样例; 'Sample' must be 样例, never 采样器
       if (/sampler/i.test(key) && value.includes('样例')) bad.push(`${key} -> ${value}`);
       if (/\bsample(s)?\b(?!.*sampler)/i.test(key) && value.includes('采样器'))
