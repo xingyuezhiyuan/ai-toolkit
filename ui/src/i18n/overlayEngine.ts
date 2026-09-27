@@ -86,24 +86,34 @@ export function applyAll(root: HTMLElement, lang: Lang, dict: Dict, stats: Engin
   });
 }
 
-/** Observe mutations (debounced to rAF) and keep the subtree translated. Returns stop(). */
+export interface WatchHandle {
+  stop: () => void;
+  /** Force a synchronous re-apply (language flipped outside the DOM). */
+  requestReapply: () => void;
+}
+
+/** Observe mutations (debounced to rAF) and keep the subtree translated. */
 export function watch(
   root: HTMLElement,
   getLang: () => Lang,
   getDict: () => Dict,
   stats: EngineStats
-): () => void {
+): WatchHandle {
   let queued = false;
   let applying = false;
+  const applyNow = () => {
+    applying = true;
+    observer.takeRecords(); // drop our own mutations from this batch
+    applyAll(root, getLang(), getDict(), stats);
+    applying = false;
+  };
   const observer = new MutationObserver(() => {
     if (applying || queued) return;
     queued = true;
     requestAnimationFrame(() => {
+      if (!queued) return; // a synchronous requestReapply already handled the batch
       queued = false;
-      applying = true;
-      observer.takeRecords(); // drop our own mutations from this batch
-      applyAll(root, getLang(), getDict(), stats);
-      applying = false;
+      applyNow();
     });
   });
   observer.observe(root, {
@@ -114,5 +124,11 @@ export function watch(
     attributeFilter: [...TRANSLATABLE_ATTRS],
   });
   applyAll(root, getLang(), getDict(), stats);
-  return () => observer.disconnect();
+  return {
+    stop: () => observer.disconnect(),
+    requestReapply: () => {
+      queued = false;
+      applyNow();
+    },
+  };
 }

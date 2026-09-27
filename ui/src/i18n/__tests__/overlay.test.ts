@@ -83,7 +83,7 @@ describe('applyAll', () => {
 
 describe('watch', () => {
   it('applies immediately and stops cleanly', () => {
-    const stop = watch(document.body, () => 'zh', () => dict, stats);
+    const handle = watch(document.body, () => 'zh', () => dict, stats);
     expect(document.querySelector('button')!.textContent).toBe('保存设置');
     // synchronous stand-in for MutationObserver-triggered re-apply (plan-sanctioned)
     const span = document.createElement('span');
@@ -91,6 +91,19 @@ describe('watch', () => {
     document.getElementById('app')!.appendChild(span);
     applyAll(document.body, 'zh', dict, stats);
     expect(span.textContent).toBe('删除');
-    stop();
+    handle.stop();
+  });
+
+  it('requestReapply re-translates immediately after a language flip (instant toggle)', () => {
+    let lang: 'en' | 'zh' = 'en';
+    const handle = watch(document.body, () => lang, () => dict, stats);
+    expect(document.querySelector('button')!.textContent).toBe('Save Settings');
+    lang = 'zh'; // setLang() happened; DOM must update without refresh
+    handle.requestReapply();
+    expect(document.querySelector('button')!.textContent).toBe('保存设置');
+    lang = 'en';
+    handle.requestReapply();
+    expect(document.querySelector('button')!.textContent).toBe('Save Settings');
+    handle.stop();
   });
 });

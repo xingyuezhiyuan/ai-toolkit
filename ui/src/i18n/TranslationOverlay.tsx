@@ -20,10 +20,11 @@ export default function TranslationOverlay() {
     // D2: local mirror / browser detection wins until the server value arrives.
     setLang(detectInitial(), false);
     document.body.dataset.lang = getLang();
-    const stop = watch(document.body, getLang, () => zh, stats);
-    // Language switches do not mutate the DOM; bounce a body attribute to trigger watch().
+    const handle = watch(document.body, getLang, () => zh, stats);
+    // Language flips do not mutate the DOM: request a synchronous re-apply (I2).
     const unsub = subscribe(() => {
       document.body.dataset.lang = getLang();
+      handle.requestReapply();
     });
     // Server is the truth source (P1): pull once and correct.
     apiClient
@@ -41,7 +42,7 @@ export default function TranslationOverlay() {
       get: () => [...stats.templateHits].sort(),
     });
     return () => {
-      stop();
+      handle.stop();
       unsub();
     };
   }, []);
