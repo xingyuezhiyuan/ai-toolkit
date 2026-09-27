@@ -973,7 +973,7 @@ writeFileSync(outFile, JSON.stringify({ generatedBy: 'tools/i18n/extract.mjs', c
 console.log(`extracted ${strings.length} unique strings -> ${path.relative(REPO, outFile)}`);
 ```
 
-提取采取「宁多勿漏」策略：所有字符串字面量都进底表，噪声（内部 key、路径等）在 Task 8/9 通过 `zh.allowEnglish` 治理，而非在提取端设黑盒规则。
+提取采取「上下文敏感收集」策略（实施修订，取代原计划的“宁多勿漏+全量收集”）：仅收集 JsxText、白名单属性（placeholder/title/alt/aria-label）、白名单对象属性（title/message/instruction/label/text/ok/cancel）及 JSX 子节点内直接字符串/三元分支；并跳过 docs.tsx（ADR-0002 二期边界）。实测 536 条，噪声归零。运行时兼容仍由漏翻收集器（V2 巡检）兑底。
 
 - [ ] **Step 2: 运行并 sanity 检查**
 
