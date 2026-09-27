@@ -1,0 +1,3295 @@
+{
+  "generatedBy": "tools/i18n/extract.mjs",
+  "count": 536,
+  "strings": [
+    {
+      "text": "- Custom -",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "- NONE -",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": ": the LoRA deltas are added into the model weights. Quantized weights\r\n                              are dequantized, merged, and re-quantized with stochastic rounding so small deltas are not\r\n                              rounded away. Merged weights cannot be un-merged, so changing the LoRA set or strengths\r\n                              reloads the affected components. Slightly faster per step than the dynamic path.",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": ". They must be images containing the concept you want to train, but not an image trained on.",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": ".pt · optimizer state",
+      "files": [
+        "ui\\src\\components\\FilesWidget.tsx"
+      ]
+    },
+    {
+      "text": ".safetensors",
+      "files": [
+        "ui\\src\\components\\FilesWidget.tsx"
+      ]
+    },
+    {
+      "text": ".uplot,\n        .uplot * {\n          font-family: inherit;\n        }\n        .uplot .u-legend {\n          color: rgba(255, 255, 255, 0.85);\n          font-size: 12px;\n          margin-top: 4px;\n        }\n        .uplot .u-legend th,\n        .uplot .u-legend td {\n          color: rgba(255, 255, 255, 0.85);\n        }\n        .uplot .u-legend .u-marker {\n          border-radius: 2px;\n        }\n        .uplot .u-select {\n          background: rgba(59, 130, 246, 0.15);\n          border: 1px solid rgba(59, 130, 246, 0.4);\n        }",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "· ~#s left",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "· VRAM",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "(default): each LoRA is applied dynamically as an extra term on the\r\n                              layers it targets. Strength changes take effect on the next generation and adding or\r\n                              removing a LoRA never reloads the model.",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "(none)",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "&nbsp;",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "# · seed ##",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "# (trend)",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "# steps",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "+ Add",
+      "files": [
+        "ui\\src\\app\\datasets\\[datasetName]\\page.tsx"
+      ]
+    },
+    {
+      "text": "+ add box",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "+ New",
+      "files": [
+        "ui\\src\\app\\datasets\\page.tsx"
+      ]
+    },
+    {
+      "text": "+ New Job",
+      "files": [
+        "ui\\src\\app\\jobs\\page.tsx"
+      ]
+    },
+    {
+      "text": "~ Custom ~",
+      "files": [
+        "ui\\src\\components\\formInputs.tsx"
+      ]
+    },
+    {
+      "text": "▸ Raw JSON",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "▾ Hide raw JSON",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "1.58bit convrot (bitnet)",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "2 bit",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "2bit convrot",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "3 bit",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "3bit convrot",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "4 bit",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "4bit convrot",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "4bit convrot (nvfp4)",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "5 bit",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "5bit convrot",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "6 bit",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "6bit convrot",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "7 bit",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "7bit convrot",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "8bit convrot",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "Accuracy Recovery Adapters",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Actions",
+      "files": [
+        "ui\\src\\app\\datasets\\page.tsx",
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "Adafactor",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Adam",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "AdamW",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "AdamW8Bit",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Add",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Add Control Image",
+      "files": [
+        "ui\\src\\components\\AddSingleImageModal.tsx"
+      ]
+    },
+    {
+      "text": "Add Dataset",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Add element",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Add Images",
+      "files": [
+        "ui\\src\\app\\datasets\\[datasetName]\\page.tsx"
+      ]
+    },
+    {
+      "text": "Add Images to:",
+      "files": [
+        "ui\\src\\components\\AddImagesModal.tsx"
+      ]
+    },
+    {
+      "text": "Add LoRA",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\components\\CaptionSimpleJob.tsx",
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Add Prompt",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Add to Queue",
+      "files": [
+        "ui\\src\\components\\CaptionDatasetModal.tsx"
+      ]
+    },
+    {
+      "text": "Add Validation Image",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Additional instructions (optional)",
+      "files": [
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Additional Quantization Options",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Advanced",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\components\\CaptionDatasetModal.tsx"
+      ]
+    },
+    {
+      "text": "Advanced job detected. Please switch to advanced view to continue.",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\page.tsx"
+      ]
+    },
+    {
+      "text": "AI Toolkit",
+      "files": [
+        "ui\\src\\components\\AuthWrapper.tsx"
+      ]
+    },
+    {
+      "text": "AI-Toolkit",
+      "files": [
+        "ui\\src\\components\\Sidebar.tsx"
+      ]
+    },
+    {
+      "text": "and add it on the",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Applied as sidechains at caption time; the model weights are never merged.",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Are you sure you want to delete \"#\"? This action cannot be undone.",
+      "files": [
+        "ui\\src\\components\\FilesWidget.tsx"
+      ]
+    },
+    {
+      "text": "Are you sure you want to delete # sample#? This action cannot be undone.",
+      "files": [
+        "ui\\src\\components\\SampleImages.tsx"
+      ]
+    },
+    {
+      "text": "Are you sure you want to delete the dataset \"#\"? This action cannot be undone.",
+      "files": [
+        "ui\\src\\app\\datasets\\page.tsx"
+      ]
+    },
+    {
+      "text": "Are you sure you want to delete this #? This action cannot be undone.",
+      "files": [
+        "ui\\src\\components\\DatasetImageCard.tsx"
+      ]
+    },
+    {
+      "text": "Are you sure you want to delete this image? This action cannot be undone.",
+      "files": [
+        "ui\\src\\components\\DatasetImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "Are you sure you want to delete this sample? This action cannot be undone.",
+      "files": [
+        "ui\\src\\components\\SampleImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "Are you sure you want to stop the job \"#\"? You CAN resume later.",
+      "files": [
+        "ui\\src\\components\\JobActionBar.tsx"
+      ]
+    },
+    {
+      "text": "Assigned GPUs",
+      "files": [
+        "ui\\src\\components\\JobOverview.tsx"
+      ]
+    },
+    {
+      "text": "audio",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Auto",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Auto Caption",
+      "files": [
+        "ui\\src\\components\\AutoCaptionButton.tsx"
+      ]
+    },
+    {
+      "text": "Auto Captioning...",
+      "files": [
+        "ui\\src\\components\\AutoCaptionButton.tsx"
+      ]
+    },
+    {
+      "text": "Automagic",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Automagic v2",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Automagic v3",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Back to the live preview",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Background",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Balanced",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "BF16",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Bounding box",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Buffering…",
+      "files": [
+        "ui\\src\\components\\AudioPlayer.tsx"
+      ]
+    },
+    {
+      "text": "Cancel",
+      "files": [
+        "ui\\src\\app\\datasets\\page.tsx",
+        "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\components\\AddSingleImageModal.tsx",
+        "ui\\src\\components\\CaptionDatasetModal.tsx",
+        "ui\\src\\components\\ConfirmModal.tsx",
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx",
+        "ui\\src\\components\\MergeLoRAsModal.tsx",
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Cancel Upload",
+      "files": [
+        "ui\\src\\components\\AddImagesModal.tsx"
+      ]
+    },
+    {
+      "text": "cancelled",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "cancelled.",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "caption",
+      "files": [
+        "ui\\src\\app\\datasets\\[datasetName]\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Caption",
+      "files": [
+        "ui\\src\\components\\AutoCaptionButton.tsx"
+      ]
+    },
+    {
+      "text": "Caption Dataset",
+      "files": [
+        "ui\\src\\components\\CaptionDatasetModal.tsx"
+      ]
+    },
+    {
+      "text": "Caption ext",
+      "files": [
+        "ui\\src\\app\\datasets\\[datasetName]\\page.tsx"
+      ]
+    },
+    {
+      "text": "Caption is not valid JSON, so the form editor is unavailable. Fix it in the raw text below.",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "CAPTION:",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "caption.batch_size",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "caption.caption_format",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "caption.caption_prompt",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "caption.extract_vocals_before_transcribe",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "caption.fixed_caption",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "caption.keep_timestamps",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "caption.layer_offloading",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "caption.max_new_tokens",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "caption.max_res",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "caption.model_name_or_path2",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "caption.thinking",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Captioning",
+      "files": [
+        "ui\\src\\components\\AutoCaptionButton.tsx"
+      ]
+    },
+    {
+      "text": "Captioning...",
+      "files": [
+        "ui\\src\\components\\CaptionMonitor.tsx"
+      ]
+    },
+    {
+      "text": "Check Password",
+      "files": [
+        "ui\\src\\components\\AuthWrapper.tsx"
+      ]
+    },
+    {
+      "text": "Checkpoints",
+      "files": [
+        "ui\\src\\components\\FilesWidget.tsx"
+      ]
+    },
+    {
+      "text": "chunks",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Clear",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "Clear image",
+      "files": [
+        "ui\\src\\components\\SampleControlImage.tsx"
+      ]
+    },
+    {
+      "text": "Click or drop",
+      "files": [
+        "ui\\src\\components\\SampleControlImage.tsx"
+      ]
+    },
+    {
+      "text": "Click to choose a .safetensors file, or drop one here",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Clock Speed",
+      "files": [
+        "ui\\src\\components\\GPUWidget.tsx"
+      ]
+    },
+    {
+      "text": "Clone Job",
+      "files": [
+        "ui\\src\\components\\JobActionBar.tsx"
+      ]
+    },
+    {
+      "text": "Close",
+      "files": [
+        "ui\\src\\components\\AddImagesModal.tsx",
+        "ui\\src\\components\\DocModal.tsx",
+        "ui\\src\\components\\MergeLoRAsModal.tsx",
+        "ui\\src\\components\\PromptBoxEditorModal.tsx",
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Close menu",
+      "files": [
+        "ui\\src\\components\\Sidebar.tsx"
+      ]
+    },
+    {
+      "text": "Close modal",
+      "files": [
+        "ui\\src\\components\\Modal.tsx"
+      ]
+    },
+    {
+      "text": "cloud",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Cloud",
+      "files": [
+        "ui\\src\\components\\OstrisCloudBalance.tsx"
+      ]
+    },
+    {
+      "text": "Color palette (max 16)",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Colors (max 5)",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Concept Slider",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "Confirm",
+      "files": [
+        "ui\\src\\app\\datasets\\page.tsx",
+        "ui\\src\\components\\ConfirmModal.tsx"
+      ]
+    },
+    {
+      "text": "Confirm Action",
+      "files": [
+        "ui\\src\\components\\DocModal.tsx"
+      ]
+    },
+    {
+      "text": "Convert to a structured caption to place boxes.",
+      "files": [
+        "ui\\src\\components\\PromptBoxEditorModal.tsx"
+      ]
+    },
+    {
+      "text": "Convert to structured caption",
+      "files": [
+        "ui\\src\\components\\PromptBoxEditorModal.tsx"
+      ]
+    },
+    {
+      "text": "ConvRot 8-bit",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "CPU Info",
+      "files": [
+        "ui\\src\\components\\CPUWidget.tsx"
+      ]
+    },
+    {
+      "text": "CPU Load",
+      "files": [
+        "ui\\src\\components\\CPUWidget.tsx"
+      ]
+    },
+    {
+      "text": "Create",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\page.tsx"
+      ]
+    },
+    {
+      "text": "Create a Read token on",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Create Job",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\page.tsx"
+      ]
+    },
+    {
+      "text": "Creative:",
+      "files": [
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Ctrl/Cmd + Enter",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Custom",
+      "files": [
+        "ui\\src\\components\\formInputs.tsx"
+      ]
+    },
+    {
+      "text": "custom medium",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Custom…",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "dark",
+      "files": [
+        "ui\\src\\components\\ThemeToggle.tsx"
+      ]
+    },
+    {
+      "text": "Dashboard",
+      "files": [
+        "ui\\src\\app\\dashboard\\page.tsx"
+      ]
+    },
+    {
+      "text": "Dataset",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Dataset Folder Path",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Dataset Image",
+      "files": [
+        "ui\\src\\components\\DatasetImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "Dataset Name",
+      "files": [
+        "ui\\src\\app\\datasets\\page.tsx"
+      ]
+    },
+    {
+      "text": "Dataset:",
+      "files": [
+        "ui\\src\\app\\datasets\\[datasetName]\\page.tsx"
+      ]
+    },
+    {
+      "text": "Datasets",
+      "files": [
+        "ui\\src\\app\\datasets\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "datasets.audio_normalize",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "datasets.audio_preserve_pitch",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "datasets.auto_frame_count",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "datasets.control_path",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "datasets.do_audio",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "datasets.do_i2v",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "datasets.multi_control_paths",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "DDPM",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "delete",
+      "files": [
+        "ui\\src\\components\\JobActionBar.tsx"
+      ]
+    },
+    {
+      "text": "Delete",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Delete #",
+      "files": [
+        "ui\\src\\components\\DatasetImageCard.tsx"
+      ]
+    },
+    {
+      "text": "Delete all # generated files from disk? This cannot be undone.",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Delete all results",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Delete checkpoint",
+      "files": [
+        "ui\\src\\components\\FilesWidget.tsx"
+      ]
+    },
+    {
+      "text": "Delete Checkpoint",
+      "files": [
+        "ui\\src\\components\\FilesWidget.tsx"
+      ]
+    },
+    {
+      "text": "Delete Dataset",
+      "files": [
+        "ui\\src\\app\\datasets\\page.tsx"
+      ]
+    },
+    {
+      "text": "Delete element",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Delete Image",
+      "files": [
+        "ui\\src\\components\\DatasetImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "Delete Job",
+      "files": [
+        "ui\\src\\components\\JobActionBar.tsx"
+      ]
+    },
+    {
+      "text": "Delete Jobs",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "Delete optimizer state",
+      "files": [
+        "ui\\src\\components\\FilesWidget.tsx"
+      ]
+    },
+    {
+      "text": "Delete Sample",
+      "files": [
+        "ui\\src\\components\\SampleImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "Delete Samples",
+      "files": [
+        "ui\\src\\components\\SampleImages.tsx"
+      ]
+    },
+    {
+      "text": "Delete Selected",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "Delete Selected Range",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Deleting",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "Deleting Samples",
+      "files": [
+        "ui\\src\\components\\SampleImages.tsx"
+      ]
+    },
+    {
+      "text": "Deleting...",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Describe this in detail.",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Display",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "do not include the validation images in the dataset",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Download",
+      "files": [
+        "ui\\src\\components\\DatasetImageViewer.tsx",
+        "ui\\src\\components\\SampleImages.tsx",
+        "ui\\src\\components\\SampleImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "Download Captions",
+      "files": [
+        "ui\\src\\components\\DatasetActionBar.tsx"
+      ]
+    },
+    {
+      "text": "Download Full Dataset",
+      "files": [
+        "ui\\src\\components\\DatasetActionBar.tsx"
+      ]
+    },
+    {
+      "text": "Downloaded to the loras folder on first use",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Drag & drop an image here, or click to select one",
+      "files": [
+        "ui\\src\\components\\AddSingleImageModal.tsx"
+      ]
+    },
+    {
+      "text": "Drag & drop files here or click to select",
+      "files": [
+        "ui\\src\\components\\AddImagesModal.tsx"
+      ]
+    },
+    {
+      "text": "Draw a new box on the image",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Draw box",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Drawing… (esc to cancel)",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Drop more files to add to queue",
+      "files": [
+        "ui\\src\\components\\AddImagesModal.tsx"
+      ]
+    },
+    {
+      "text": "Drop the image here...",
+      "files": [
+        "ui\\src\\components\\AddSingleImageModal.tsx"
+      ]
+    },
+    {
+      "text": "Duplicate Dataset",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "e.g. keep it a close-up portrait, prefer a daytime setting, always include a 9:16 vertical framing...",
+      "files": [
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Edit caption &amp; boxes",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Edit Prompt",
+      "files": [
+        "ui\\src\\components\\PromptBoxEditorModal.tsx"
+      ]
+    },
+    {
+      "text": "Edit Training Job",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\page.tsx"
+      ]
+    },
+    {
+      "text": "eg. 0",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. 0.0001",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. 0.05",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. 0.99",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. 1",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. 1.0",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. 10",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. 1024",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. 120",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. 16",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. 2000",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. 250",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. 3.0",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. 4",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. 41",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. 512",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. A photo of a cat",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. person",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. person who is happy",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. person who is sad",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "eg. woman",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Empty",
+      "files": [
+        "ui\\src\\components\\UniversalTable.tsx"
+      ]
+    },
+    {
+      "text": "Engine #…",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Engine busy:",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Engine loading…",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Engine running",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "English",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Enter caption prompt",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Enter datasets folder path",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Enter fixed caption (if you want the same caption for all audio files)",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Enter models folder path",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Enter output filename",
+      "files": [
+        "ui\\src\\components\\MergeLoRAsModal.tsx"
+      ]
+    },
+    {
+      "text": "Enter prompt",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Enter prompt...",
+      "files": [
+        "ui\\src\\components\\PromptBoxEditorModal.tsx"
+      ]
+    },
+    {
+      "text": "Enter the name of the new dataset:",
+      "files": [
+        "ui\\src\\app\\datasets\\page.tsx"
+      ]
+    },
+    {
+      "text": "Enter training folder path",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Enter training name",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Enter your Hugging Face token",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Enter your password",
+      "files": [
+        "ui\\src\\components\\AuthWrapper.tsx"
+      ]
+    },
+    {
+      "text": "error",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\app\\settings\\page.tsx",
+        "ui\\src\\components\\AddImagesModal.tsx",
+        "ui\\src\\components\\CaptionMonitor.tsx",
+        "ui\\src\\components\\FilesWidget.tsx",
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx",
+        "ui\\src\\components\\JobLossGraph.tsx",
+        "ui\\src\\components\\JobOverview.tsx"
+      ]
+    },
+    {
+      "text": "Error",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Error fetching job",
+      "files": [
+        "ui\\src\\app\\jobs\\[jobID]\\page.tsx"
+      ]
+    },
+    {
+      "text": "Error loading checkpoints",
+      "files": [
+        "ui\\src\\components\\FilesWidget.tsx"
+      ]
+    },
+    {
+      "text": "Error loading log",
+      "files": [
+        "ui\\src\\components\\CaptionMonitor.tsx",
+        "ui\\src\\components\\generate\\GenerateFooter.tsx",
+        "ui\\src\\components\\JobOverview.tsx"
+      ]
+    },
+    {
+      "text": "Error loading plugin",
+      "files": [
+        "ui\\src\\components\\JobPlugin.tsx"
+      ]
+    },
+    {
+      "text": "Error saving settings. Please try again.",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Error saving training. Please try again.",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Error!",
+      "files": [
+        "ui\\src\\components\\GPUMonitor.tsx"
+      ]
+    },
+    {
+      "text": "every",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Expands the idea — places the subject in a scene and adds fitting details.",
+      "files": [
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "extras_name_or_path",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "failed",
+      "files": [
+        "ui\\src\\components\\AddImagesModal.tsx"
+      ]
+    },
+    {
+      "text": "Failed",
+      "files": [
+        "ui\\src\\components\\AddImagesModal.tsx"
+      ]
+    },
+    {
+      "text": "Failed to load loss logs.",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Faithful — structures the prompt as given, with a minimal background.",
+      "files": [
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Fan Speed",
+      "files": [
+        "ui\\src\\components\\GPUWidget.tsx"
+      ]
+    },
+    {
+      "text": "file",
+      "files": [
+        "ui\\src\\components\\AddImagesModal.tsx",
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "File:",
+      "files": [
+        "ui\\src\\components\\DatasetImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "filter",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Finished with errors. See log below.",
+      "files": [
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Flip X",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Flip Y",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "float8",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "Float8",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "FlowMatch",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Follow",
+      "files": [
+        "ui\\src\\components\\generate\\GenerateFooter.tsx"
+      ]
+    },
+    {
+      "text": "For this model",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Force stop",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "FP16",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "FP32",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Gated Model",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Gated model.",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Generate",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Generated text",
+      "files": [
+        "ui\\src\\components\\SampleImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "GPU",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "GPU #",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "GPU ##",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\components\\CaptionDatasetModal.tsx",
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "GPU Load",
+      "files": [
+        "ui\\src\\components\\GPUWidget.tsx"
+      ]
+    },
+    {
+      "text": "GPU Monitor",
+      "files": [
+        "ui\\src\\components\\GPUMonitor.tsx"
+      ]
+    },
+    {
+      "text": "GPUs:",
+      "files": [
+        "ui\\src\\components\\JobOverview.tsx"
+      ]
+    },
+    {
+      "text": "High Noise",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "History",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "hub repo, local folder, or .safetensors",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Hugging Face Token",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Huggingface",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Ideogram Caption",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "ideogram_4_prompt",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Idle",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "if you need to access gated/private models.",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "image",
+      "files": [
+        "ui\\src\\app\\datasets\\[datasetName]\\page.tsx"
+      ]
+    },
+    {
+      "text": "Images, videos, .txt or .json supported",
+      "files": [
+        "ui\\src\\components\\AddImagesModal.tsx"
+      ]
+    },
+    {
+      "text": "Import Config",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\page.tsx"
+      ]
+    },
+    {
+      "text": "Inference Engine",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "INFERENCE ENGINE:",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "Info",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "job",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "Job",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Job Name",
+      "files": [
+        "ui\\src\\components\\JobOverview.tsx"
+      ]
+    },
+    {
+      "text": "json",
+      "files": [
+        "ui\\src\\app\\datasets\\[datasetName]\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Kill the engine process",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Language / 语言",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Large files are sent in",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Last updated:",
+      "files": [
+        "ui\\src\\components\\GPUMonitor.tsx"
+      ]
+    },
+    {
+      "text": "Layer Offloading",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Learn more.",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Linear",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "loading",
+      "files": [
+        "ui\\src\\components\\CaptionMonitor.tsx",
+        "ui\\src\\components\\FilesWidget.tsx",
+        "ui\\src\\components\\JobLossGraph.tsx",
+        "ui\\src\\components\\JobOverview.tsx"
+      ]
+    },
+    {
+      "text": "Loading balance",
+      "files": [
+        "ui\\src\\components\\OstrisCloudBalance.tsx"
+      ]
+    },
+    {
+      "text": "Loading caption...",
+      "files": [
+        "ui\\src\\components\\DatasetImageCard.tsx"
+      ]
+    },
+    {
+      "text": "Loading GPU info...",
+      "files": [
+        "ui\\src\\components\\CaptionMonitor.tsx"
+      ]
+    },
+    {
+      "text": "Loading log...",
+      "files": [
+        "ui\\src\\components\\CaptionMonitor.tsx",
+        "ui\\src\\components\\JobOverview.tsx"
+      ]
+    },
+    {
+      "text": "Loading log…",
+      "files": [
+        "ui\\src\\components\\generate\\GenerateFooter.tsx"
+      ]
+    },
+    {
+      "text": "Loading plugin...",
+      "files": [
+        "ui\\src\\components\\JobPlugin.tsx"
+      ]
+    },
+    {
+      "text": "Loading...",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\app\\jobs\\[jobID]\\page.tsx",
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Loading…",
+      "files": [
+        "ui\\src\\components\\AudioPlayer.tsx",
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx",
+        "ui\\src\\components\\SampleImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "lokr",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "LoKr",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "lora",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "LoRA",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "LoRA Trainer",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "LoRAs",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Loss graph",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Low Noise",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Main",
+      "files": [
+        "ui\\src\\components\\SampleImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "Main image",
+      "files": [
+        "ui\\src\\components\\SampleImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "Mark as Stopped",
+      "files": [
+        "ui\\src\\components\\JobActionBar.tsx"
+      ]
+    },
+    {
+      "text": "Mark Job as Stopped",
+      "files": [
+        "ui\\src\\components\\JobActionBar.tsx"
+      ]
+    },
+    {
+      "text": "markStopped",
+      "files": [
+        "ui\\src\\components\\JobActionBar.tsx"
+      ]
+    },
+    {
+      "text": "Mean Absolute Error",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Mean Squared Error",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Medium",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Memory",
+      "files": [
+        "ui\\src\\components\\CPUWidget.tsx",
+        "ui\\src\\components\\GPUWidget.tsx"
+      ]
+    },
+    {
+      "text": "merge",
+      "files": [
+        "ui\\src\\components\\FilesWidget.tsx"
+      ]
+    },
+    {
+      "text": "Merge",
+      "files": [
+        "ui\\src\\components\\MergeLoRAsModal.tsx"
+      ]
+    },
+    {
+      "text": "Merge complete.",
+      "files": [
+        "ui\\src\\components\\MergeLoRAsModal.tsx"
+      ]
+    },
+    {
+      "text": "Merge failed. See log below.",
+      "files": [
+        "ui\\src\\components\\MergeLoRAsModal.tsx"
+      ]
+    },
+    {
+      "text": "Merge LoRAs",
+      "files": [
+        "ui\\src\\components\\MergeLoRAsModal.tsx"
+      ]
+    },
+    {
+      "text": "Merge LoRAs into weights",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Merging LoRAs... please do not close this window.",
+      "files": [
+        "ui\\src\\components\\MergeLoRAsModal.tsx"
+      ]
+    },
+    {
+      "text": "MHz",
+      "files": [
+        "ui\\src\\components\\GPUWidget.tsx"
+      ]
+    },
+    {
+      "text": "Model",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Model notes",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "model.assistant_lora_path",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "model.low_vram",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "model.model_kwargs.instruction",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "model.model_kwargs.kv_cache",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "model.multistage",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "model.qie.match_target_res",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "model.quantize",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "model.unconditional_lora_path",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Models folder",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Models Folder Path",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "MODELS_PATH/loras",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "multiline",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Multistage",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Name",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "New Dataset",
+      "files": [
+        "ui\\src\\app\\datasets\\page.tsx"
+      ]
+    },
+    {
+      "text": "New Training Job",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\page.tsx",
+        "ui\\src\\app\\jobs\\page.tsx"
+      ]
+    },
+    {
+      "text": "No .safetensors files found under the loras folder.",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "No checkpoints available",
+      "files": [
+        "ui\\src\\components\\FilesWidget.tsx"
+      ]
+    },
+    {
+      "text": "No CPU data available",
+      "files": [
+        "ui\\src\\components\\CPUWidget.tsx"
+      ]
+    },
+    {
+      "text": "No data yet",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "No engine job.",
+      "files": [
+        "ui\\src\\components\\generate\\GenerateFooter.tsx"
+      ]
+    },
+    {
+      "text": "No GPU data available.",
+      "files": [
+        "ui\\src\\components\\GPUMonitor.tsx"
+      ]
+    },
+    {
+      "text": "No GPUs found, but nvidia-smi is available.",
+      "files": [
+        "ui\\src\\components\\GPUMonitor.tsx"
+      ]
+    },
+    {
+      "text": "No image — this is a layout preview.",
+      "files": [
+        "ui\\src\\components\\PromptBoxEditorModal.tsx"
+      ]
+    },
+    {
+      "text": "No loss keys found yet.",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "No NVIDIA GPUs detected!",
+      "files": [
+        "ui\\src\\components\\GPUMonitor.tsx"
+      ]
+    },
+    {
+      "text": "No published LoRAs for this model.",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "No training jobs with saved LoRAs.",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "None",
+      "files": [
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "None (bf16)",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Notes - #",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Notes for this job (markdown)...",
+      "files": [
+        "ui\\src\\components\\JobNotes.tsx"
+      ]
+    },
+    {
+      "text": "number",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "NVFP4",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "nvfp4 (4bit weight only)",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "nvidia-smi is not available on this system.",
+      "files": [
+        "ui\\src\\components\\GPUMonitor.tsx"
+      ]
+    },
+    {
+      "text": "obj",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "of",
+      "files": [
+        "ui\\src\\components\\JobOverview.tsx"
+      ]
+    },
+    {
+      "text": "Off",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "On",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "One-sentence summary of the image...",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Open menu",
+      "files": [
+        "ui\\src\\components\\layout.tsx"
+      ]
+    },
+    {
+      "text": "optimizer",
+      "files": [
+        "ui\\src\\components\\FilesWidget.tsx"
+      ]
+    },
+    {
+      "text": "Ostris",
+      "files": [
+        "ui\\src\\components\\OstrisCloudBalance.tsx",
+        "ui\\src\\components\\Sidebar.tsx"
+      ]
+    },
+    {
+      "text": "Ostris - AI Toolkit",
+      "files": [
+        "ui\\src\\app\\layout.tsx"
+      ]
+    },
+    {
+      "text": "Ostris AI Toolkit",
+      "files": [
+        "ui\\src\\components\\AuthWrapper.tsx",
+        "ui\\src\\components\\ThemeLogo.tsx"
+      ]
+    },
+    {
+      "text": "Ostris AI-Toolkit v",
+      "files": [
+        "ui\\src\\components\\Sidebar.tsx"
+      ]
+    },
+    {
+      "text": "Overwrite if a file with the same name exists",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Password",
+      "files": [
+        "ui\\src\\components\\AuthWrapper.tsx"
+      ]
+    },
+    {
+      "text": "pending",
+      "files": [
+        "ui\\src\\components\\AddImagesModal.tsx"
+      ]
+    },
+    {
+      "text": "Permanently delete steps #–# (# plotted points) from the loss log for all metrics? This cannot be undone.",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Pick color",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Plot stride",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Power Draw",
+      "files": [
+        "ui\\src\\components\\GPUWidget.tsx"
+      ]
+    },
+    {
+      "text": "Preparing",
+      "files": [
+        "ui\\src\\components\\SampleImages.tsx"
+      ]
+    },
+    {
+      "text": "Prodigy",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Prodigy8Bit",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Progress",
+      "files": [
+        "ui\\src\\components\\JobOverview.tsx"
+      ]
+    },
+    {
+      "text": "Prompt",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Prompt ##",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Prompt:",
+      "files": [
+        "ui\\src\\components\\SampleImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "pt",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "qfloat8 (default)",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx"
+      ]
+    },
+    {
+      "text": "Quantize / Compile",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Quanto float8",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Queue",
+      "files": [
+        "ui\\src\\app\\jobs\\page.tsx"
+      ]
+    },
+    {
+      "text": "Queue Running",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "Queue Stopped",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "queued",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Queued",
+      "files": [
+        "ui\\src\\components\\AddImagesModal.tsx"
+      ]
+    },
+    {
+      "text": "Queues",
+      "files": [
+        "ui\\src\\app\\dashboard\\page.tsx"
+      ]
+    },
+    {
+      "text": "read token",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Refresh",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx",
+        "ui\\src\\components\\UniversalTable.tsx"
+      ]
+    },
+    {
+      "text": "refreshing",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Refreshing...",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "remove",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx",
+        "ui\\src\\components\\JobActionBar.tsx"
+      ]
+    },
+    {
+      "text": "Remove",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\components\\CaptionSimpleJob.tsx",
+        "ui\\src\\components\\MergeLoRAsModal.tsx"
+      ]
+    },
+    {
+      "text": "Remove color",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Remove Dataset",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Replace",
+      "files": [
+        "ui\\src\\components\\SampleControlImage.tsx"
+      ]
+    },
+    {
+      "text": "Reset zoom",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Restart",
+      "files": [
+        "ui\\src\\components\\AudioPlayer.tsx"
+      ]
+    },
+    {
+      "text": "running",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "sample",
+      "files": [
+        "ui\\src\\components\\JobActionBar.tsx"
+      ]
+    },
+    {
+      "text": "Sample",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Sample #:",
+      "files": [
+        "ui\\src\\components\\SampleImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "Sample Image",
+      "files": [
+        "ui\\src\\components\\SampleImages.tsx",
+        "ui\\src\\components\\SampleImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "Sample Next Step",
+      "files": [
+        "ui\\src\\components\\JobActionBar.tsx"
+      ]
+    },
+    {
+      "text": "Sample Prompts (",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "sample.ctrl_img",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "sample.duration",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "save",
+      "files": [
+        "ui\\src\\components\\JobActionBar.tsx"
+      ]
+    },
+    {
+      "text": "Save",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx",
+        "ui\\src\\components\\PromptBoxEditorModal.tsx"
+      ]
+    },
+    {
+      "text": "Save Next Step",
+      "files": [
+        "ui\\src\\components\\JobActionBar.tsx"
+      ]
+    },
+    {
+      "text": "Save Settings",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Saved",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx",
+        "ui\\src\\components\\PromptBoxEditorModal.tsx"
+      ]
+    },
+    {
+      "text": "saving",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\page.tsx",
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Saving...",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\page.tsx",
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Scroll to Bottom",
+      "files": [
+        "ui\\src\\components\\SampleImages.tsx"
+      ]
+    },
+    {
+      "text": "Scroll to Top",
+      "files": [
+        "ui\\src\\components\\SampleImages.tsx"
+      ]
+    },
+    {
+      "text": "Scrub",
+      "files": [
+        "ui\\src\\components\\AudioPlayer.tsx"
+      ]
+    },
+    {
+      "text": "Seed:",
+      "files": [
+        "ui\\src\\components\\SampleImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "Select (highlights its box on the image)",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Select all",
+      "files": [
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Select prompts to upsample into structured Ideogram captions.",
+      "files": [
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "selected",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "Selected LoRAs",
+      "files": [
+        "ui\\src\\components\\MergeLoRAsModal.tsx"
+      ]
+    },
+    {
+      "text": "selected.",
+      "files": [
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Series",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Settings",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "settings page",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Settings saved successfully!",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Shared Memory",
+      "files": [
+        "ui\\src\\components\\GPUWidget.tsx"
+      ]
+    },
+    {
+      "text": "Shift",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Show Advanced",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\page.tsx"
+      ]
+    },
+    {
+      "text": "Show Simple",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\page.tsx"
+      ]
+    },
+    {
+      "text": "Sigmoid",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "simple",
+      "files": [
+        "ui\\src\\components\\CaptionDatasetModal.tsx"
+      ]
+    },
+    {
+      "text": "Simple",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\page.tsx",
+        "ui\\src\\components\\CaptionDatasetModal.tsx"
+      ]
+    },
+    {
+      "text": "Slider",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Smoothing",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Some models support loading ComfyUI model weights directly. Models that do will be loaded\r\n                      from/downloaded to this path. Must be an absolute path. If blank, it will default to the models\r\n                      folder in the project root.",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Something went wrong.",
+      "files": [
+        "ui\\src\\components\\ErrorBoundary.tsx"
+      ]
+    },
+    {
+      "text": "Speed",
+      "files": [
+        "ui\\src\\components\\JobOverview.tsx"
+      ]
+    },
+    {
+      "text": "Standard",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "start",
+      "files": [
+        "ui\\src\\components\\JobActionBar.tsx"
+      ]
+    },
+    {
+      "text": "START",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "Start engine",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Start the inference engine on a GPU to generate images, video, and audio with any model.",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Starting engine…",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Status",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "step",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Step",
+      "files": [
+        "ui\\src\\components\\JobOverview.tsx"
+      ]
+    },
+    {
+      "text": "Step:",
+      "files": [
+        "ui\\src\\components\\SampleImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "Stepped Recovery",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Steps",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "stop",
+      "files": [
+        "ui\\src\\components\\JobActionBar.tsx"
+      ]
+    },
+    {
+      "text": "Stop",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "STOP",
+      "files": [
+        "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "Stop Job",
+      "files": [
+        "ui\\src\\components\\JobActionBar.tsx"
+      ]
+    },
+    {
+      "text": "Stopping engine…",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Style",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "success",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Support AI-Toolkit",
+      "files": [
+        "ui\\src\\components\\Sidebar.tsx"
+      ]
+    },
+    {
+      "text": "Target",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Temperature",
+      "files": [
+        "ui\\src\\components\\GPUWidget.tsx"
+      ]
+    },
+    {
+      "text": "Templates...",
+      "files": [
+        "ui\\src\\components\\DatasetImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "text",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "The engine is starting. Model options appear once its server is up.",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "The password is set with the environment variable AI_TOOLKIT_AUTH, the default is the super secure secret word \"password\"",
+      "files": [
+        "ui\\src\\components\\AuthWrapper.tsx"
+      ]
+    },
+    {
+      "text": "The scene shell: walls, floor, sky, ambient light...",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "This loads a model and runs on the GPU. You need at least 13GB of free VRAM to run this, so make sure the\r\n            GPU is idle (no training or other jobs running) before starting, or it may run out of memory.",
+      "files": [
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "This model is gated on Huggingface. Before you can use it, you will need to accept the model\r\n                            terms on the model page:",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "This will create a new folder with the name below in your dataset folder.",
+      "files": [
+        "ui\\src\\app\\datasets\\page.tsx"
+      ]
+    },
+    {
+      "text": "Toggle",
+      "files": [
+        "ui\\src\\components\\Card.tsx",
+        "ui\\src\\components\\formInputs.tsx"
+      ]
+    },
+    {
+      "text": "train",
+      "files": [
+        "ui\\src\\components\\JobActionBar.tsx",
+        "ui\\src\\components\\JobOverview.tsx"
+      ]
+    },
+    {
+      "text": "train.audio_loss_multiplier",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "train.blank_prompt_preservation",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "train.diff_output_preservation",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "train.timestep_type",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Training",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Training Folder Path",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Training jobs",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Training saved successfully!",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "trigger_word",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "txt",
+      "files": [
+        "ui\\src\\app\\datasets\\[datasetName]\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Txt",
+      "files": [
+        "ui\\src\\components\\SampleImageViewer.tsx"
+      ]
+    },
+    {
+      "text": "UI downsample for huge runs.",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Unsaved changes",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Update",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\page.tsx"
+      ]
+    },
+    {
+      "text": "Update Job",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\page.tsx"
+      ]
+    },
+    {
+      "text": "upload",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Upload",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Upload another",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Upload complete.",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Upload of",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "uploading",
+      "files": [
+        "ui\\src\\components\\AddImagesModal.tsx",
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Uploading...",
+      "files": [
+        "ui\\src\\components\\AddSingleImageModal.tsx"
+      ]
+    },
+    {
+      "text": "Uploading…",
+      "files": [
+        "ui\\src\\components\\AddImagesModal.tsx",
+        "ui\\src\\components\\SampleControlImage.tsx"
+      ]
+    },
+    {
+      "text": "Uploading… this window stays open until the transfer finishes.",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Uploads to",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Upsample (#)",
+      "files": [
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Upsample Prompts",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "upsampled",
+      "files": [
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Upsampling complete.",
+      "files": [
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Upsampling...",
+      "files": [
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Upsampling... please do not close this window.",
+      "files": [
+        "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Use this LoRA",
+      "files": [
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Validation",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Validation Images (",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Validation runs a stable loss check on a fixed set of images. Each image is encoded once at startup\r\n                    and predicted at the selected sigmas with fixed seeds, so the result is always deterministic and\r\n                    comparable across the run. The average loss is logged as val/loss every time validation runs. The\r\n                    images need to match the concept of your dataset, but",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "video",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "View All",
+      "files": [
+        "ui\\src\\app\\dashboard\\page.tsx"
+      ]
+    },
+    {
+      "text": "Waiting for loss points...",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Waiting for the GPU queue to pick the job up. If the queue is stopped, start it from the Queue\r\n                      page or cancel here.",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Warning: This software may modify datasets so it is recommended you keep a backup somewhere else\r\n                        or have a dedicated folder for this software.",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Wavelet",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "We will store your training information here. Must be an absolute path. If blank, it will default\r\n                      to the output folder in the project root.",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "Weighted",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Where we store and find your datasets.",
+      "files": [
+        "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "You will also need to create a Huggingface",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Your generation will appear here",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    }
+  ]
+}
