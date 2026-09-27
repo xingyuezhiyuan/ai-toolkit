@@ -1,0 +1,118 @@
+import type { Dict, Lang } from './types';
+import { lookup, shouldSkip, looksLikeUiText, skeleton, TRANSLATABLE_ATTRS } from './core';
+
+export interface EngineStats {
+  misses: Set<string>;
+  templateHits: Set<string>;
+}
+
+export function createStats(): EngineStats {
+  return { misses: new Set(), templateHits: new Set() };
+}
+
+const originals = new WeakMap<Text, string>();
+const appliedText = new WeakMap<Text, string>();
+const origAttrs = new WeakMap<Element, Record<string, string>>();
+
+function walkText(root: Node, cb: (n: Text) => void) {
+  const tw = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  let n: Text | null;
+  while ((n = tw.nextNode() as Text | null)) cb(n);
+}
+
+function recordMiss(stats: EngineStats, allow: Set<string>, orig: string) {
+  const t = orig.trim();
+  if (t && looksLikeUiText(t) && !allow.has(t) && !allow.has(skeleton(t))) {
+    stats.misses.add(t);
+  }
+}
+
+/** Idempotent full pass over `root` for the target language. */
+export function applyAll(root: HTMLElement, lang: Lang, dict: Dict, stats: EngineStats): void {
+  const allow = new Set(dict.allowEnglish);
+
+  walkText(root, node => {
+    const host = node.parentElement;
+    if (!host || shouldSkip(host)) return;
+    const cur = node.textContent ?? '';
+    // Staleness guard: trust our saved original only while the node still shows
+    // exactly what we last wrote; anything else means React replaced the text.
+    const orig = appliedText.get(node) === cur ? originals.get(node) ?? cur : cur;
+    originals.set(node, orig);
+
+    if (lang === 'en') {
+      if (node.textContent !== orig) {
+        node.textContent = orig;
+      }
+      appliedText.set(node, orig);
+      return;
+    }
+    const hit = lookup(dict, orig);
+    if (hit) {
+      if (node.textContent !== hit.translation) {
+        node.textContent = hit.translation;
+        appliedText.set(node, hit.translation);
+      }
+      if (hit.viaTemplate && hit.skeletonKey) stats.templateHits.add(hit.skeletonKey);
+    } else {
+      recordMiss(stats, allow, orig);
+    }
+  });
+
+  root.querySelectorAll('*').forEach(el => {
+    if (shouldSkip(el)) return;
+    let store: Record<string, string> | undefined = origAttrs.get(el);
+    for (const attr of TRANSLATABLE_ATTRS) {
+      const v = el.getAttribute(attr);
+      if (v === null) continue;
+      if (!store) {
+        store = {};
+        origAttrs.set(el, store);
+      }
+      if (store[attr] === undefined) store[attr] = v;
+      const base = store[attr];
+      if (lang === 'en') {
+        if (v !== base) el.setAttribute(attr, base);
+        continue;
+      }
+      const hit = lookup(dict, base);
+      if (hit) {
+        if (el.getAttribute(attr) !== hit.translation) el.setAttribute(attr, hit.translation);
+        if (hit.viaTemplate && hit.skeletonKey) stats.templateHits.add(hit.skeletonKey);
+      } else {
+        recordMiss(stats, allow, base);
+      }
+    }
+  });
+}
+
+/** Observe mutations (debounced to rAF) and keep the subtree translated. Returns stop(). */
+export function watch(
+  root: HTMLElement,
+  getLang: () => Lang,
+  getDict: () => Dict,
+  stats: EngineStats
+): () => void {
+  let queued = false;
+  let applying = false;
+  const observer = new MutationObserver(() => {
+    if (applying || queued) return;
+    queued = true;
+    requestAnimationFrame(() => {
+      queued = false;
+      applying = true;
+      observer.takeRecords(); // drop our own mutations from this batch
+      applyAll(root, getLang(), getDict(), stats);
+      applying = false;
+    });
+  });
+  observer.observe(root, {
+    childList: true,
+    subtree: true,
+    characterData: true,
+    attributes: true,
+    attributeFilter: [...TRANSLATABLE_ATTRS],
+  });
+  applyAll(root, getLang(), getDict(), stats);
+  return () => observer.disconnect();
+}
