@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import useSettings from '@/hooks/useSettings';
 import { TopBar, MainContent } from '@/components/layout';
 import { apiClient } from '@/utils/api';
+import { getLang, setLang, subscribe } from '@/i18n/langStore';
+import type { Lang } from '@/i18n/types';
 
 export default function Settings() {
   const { settings, setSettings } = useSettings();
@@ -41,6 +43,7 @@ export default function Settings() {
         <div className="flex-1"></div>
       </TopBar>
       <MainContent>
+        <LanguageSwitch />
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div>
@@ -145,5 +148,41 @@ export default function Settings() {
         </form>
       </MainContent>
     </>
+  );
+}
+
+function LanguageSwitch() {
+  const [lang, setLangView] = useState<Lang | null>(null);
+  const [saveError, setSaveError] = useState(false);
+  useEffect(() => {
+    setLangView(getLang());
+    return subscribe(l => setLangView(l));
+  }, []);
+  const choose = (l: Lang) => {
+    if (l === lang) return;
+    setLang(l); // instant apply (mirror write included)
+    setSaveError(false);
+    apiClient.post('/api/settings', { LANGUAGE: l }).catch(err => {
+      console.error('Failed to persist language:', err);
+      setSaveError(true);
+    });
+  };
+  const btn = (active: boolean) =>
+    `px-4 py-1.5 text-sm transition-colors ${
+      active ? 'bg-gray-600 text-white' : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
+    }`;
+  return (
+    <div className="flex items-center gap-3 mb-6">
+      <span className="text-sm font-medium">Language / 语言</span>
+      <div className="inline-flex rounded-lg overflow-hidden border border-gray-700">
+        <button type="button" className={btn(lang === 'en')} onClick={() => choose('en')}>
+          English
+        </button>
+        <button type="button" className={btn(lang === 'zh')} onClick={() => choose('zh')}>
+          简体中文
+        </button>
+      </div>
+      {saveError && <span className="text-xs text-orange-400">保存失败，仍为本地生效</span>}
+    </div>
   );
 }

@@ -31,34 +31,25 @@ export async function GET() {
   }
 }
 
+const ALLOWED_KEYS = ['HF_TOKEN', 'TRAINING_FOLDER', 'DATASETS_FOLDER', 'MODELS_PATH', 'LANGUAGE'];
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { HF_TOKEN, TRAINING_FOLDER, DATASETS_FOLDER, MODELS_PATH } = body;
 
-    // Upsert both settings
-    await Promise.all([
+    // Partial-safe: only upsert string values actually present in this request.
+    // (Language switch posts {LANGUAGE} alone and must not wipe HF_TOKEN.)
+    const ops = ALLOWED_KEYS.filter(k => typeof body?.[k] === 'string').map(k =>
       prisma.settings.upsert({
-        where: { key: 'HF_TOKEN' },
-        update: { value: HF_TOKEN },
-        create: { key: 'HF_TOKEN', value: HF_TOKEN },
-      }),
-      prisma.settings.upsert({
-        where: { key: 'TRAINING_FOLDER' },
-        update: { value: TRAINING_FOLDER },
-        create: { key: 'TRAINING_FOLDER', value: TRAINING_FOLDER },
-      }),
-      prisma.settings.upsert({
-        where: { key: 'DATASETS_FOLDER' },
-        update: { value: DATASETS_FOLDER },
-        create: { key: 'DATASETS_FOLDER', value: DATASETS_FOLDER },
-      }),
-      prisma.settings.upsert({
-        where: { key: 'MODELS_PATH' },
-        update: { value: MODELS_PATH },
-        create: { key: 'MODELS_PATH', value: MODELS_PATH },
-      }),
-    ]);
+        where: { key: k },
+        update: { value: body[k] },
+        create: { key: k, value: body[k] },
+      })
+    );
+    if (ops.length === 0) {
+      return NextResponse.json({ error: 'No valid settings keys in body' }, { status: 400 });
+    }
+    await Promise.all(ops);
 
     flushCache();
 
