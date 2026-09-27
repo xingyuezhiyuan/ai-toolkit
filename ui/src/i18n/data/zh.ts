@@ -142,7 +142,7 @@ const zh: Dict = {
     'Edit caption & boxes': '编辑标注与边框',
     'Edit Prompt': '编辑 Prompt',
     'Edit Training Job': '编辑训练任务',
-    'eg. A photo of a cat': '例如：一张猫的照片',
+    'eg. A photo of a cat': '例如：A photo of a cat（一张猫的照片）',
     'eg. person': '例如：person',
     'eg. person who is happy': '例如：person（开心的人）',
     'eg. person who is sad': '例如：person（难过的人）',
@@ -559,6 +559,7 @@ const zh: Dict = {
     'LoRA Scale': 'LoRA 缩放',
     'Collapse settings': '收起设置面板',
     'Show log': '显示日志',
+    'Hide log': '隐藏日志',
   },
   templates: {
     // --- dynamic slots: "#" (quoted phrase) / "#" (number), backfilled into {0},{1}.. ---
@@ -601,7 +602,7 @@ const zh: Dict = {
     'Some models support loading ComfyUI model weights directly. Models that do will be loaded from/downloaded to this path. Must be an absolute path. If blank, it will default to the models folder in the project root.':
       '部分模型支持直接加载 ComfyUI 权重，支持的模型将从该路径加载/下载到该路径。必须是绝对路径，留空则默认使用项目根目录下的 models 文件夹。',
     'This loads a model and runs on the GPU. You need at least #GB of free VRAM to run this, so make sure the GPU is idle (no training or other jobs running) before starting, or it may run out of memory.':
-      '这会加载模型并在 GPU 上运行，至少需要 # 的空余显存。启动前请确保 GPU 空闲（没有训练或其他任务在跑），否则可能内存不足。',
+      '这会加载模型并在 GPU 上运行，至少需要 {0}GB 的空余显存。启动前请确保 GPU 空闲（没有训练或其他任务在跑），否则可能内存不足。',
     'This model is gated on Huggingface. Before you can use it, you will need to accept the model terms on the model page:':
       '该模型在 Huggingface 上是受限模型。使用前请先在模型页面接受许可条款：',
     'Validation runs a stable loss check on a fixed set of images. Each image is encoded once at startup and predicted at the selected sigmas with fixed seeds, so the result is always deterministic and comparable across the run. The average loss is logged as val/loss every time validation runs. The images need to match the concept of your dataset, but':

@@ -20,8 +20,13 @@ const PROP_NAMES = new Set(['title', 'message', 'instruction', 'label', 'text', 
 
 const found = new Map(); // trimmed text -> Set(relfile)
 
+const ENTITIES = { '&nbsp;': '\u00a0', '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'" };
+function decodeEntities(s) {
+  return s.replace(/&nbsp;|&amp;|&lt;|&gt;|&quot;|&#39;/g, m => ENTITIES[m]);
+}
+
 function add(raw, file) {
-  const t = raw.trim();
+  const t = decodeEntities(raw.trim());
   if (!t || !/[A-Za-z]{2}/.test(t)) return;
   if (!found.has(t)) found.set(t, new Set());
   found.get(t).add(path.relative(REPO, file));

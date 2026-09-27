@@ -2,10 +2,13 @@
 // Run (UI must be up on :8675): node tools/i18n/audit.mjs
 import { chromium } from 'playwright';
 import { mkdirSync } from 'fs';
+import { fileURLToPath } from 'url';
+import path from 'path';
 
 const BASE = process.env.BASE || 'http://localhost:8675';
 const ROUTES = ['/', '/dashboard', '/jobs', '/jobs/new', '/datasets', '/generate', '/settings'];
-mkdirSync(new URL('./artifacts', import.meta.url), { recursive: true });
+const ART_DIR = fileURLToPath(new URL('./artifacts', import.meta.url));
+mkdirSync(ART_DIR, { recursive: true });
 
 const browser = await chromium.launch({ channel: 'msedge' });
 const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
@@ -20,7 +23,7 @@ for (const r of ROUTES) {
   const hits = await page.evaluate(() => window.__i18nTemplateHits || []);
   hits.forEach(h => allTemplateHits.add(h));
   const safe = r === '/' ? 'index' : r.replace(/\W+/g, '_');
-  await page.screenshot({ path: `artifacts/${safe}.zh.png`, fullPage: true });
+  await page.screenshot({ path: path.join(ART_DIR, `${safe}.zh.png`), fullPage: true });
   console.log(`${r}: misses=${misses.length}`);
   misses.forEach(m => console.log('   MISS:', m));
   if (misses.length) fail = 1;

@@ -54,9 +54,9 @@ _Avoid_: 错误日志
 
 ### 保留英文（不翻译）
 
-`LoRA` `LoKr` `prompt` `checkpoint` `epoch` `step(s)` `seed` `lora_alpha` `rank` `dropout` `network`（本工具语境下指 LoRA/LoKr 挂载结构）
+`LoRA` `LoKr` `prompt` `epoch` `seed` `lora_alpha` `rank` `dropout` `network`（本工具语境下指 LoRA/LoKr 挂载结构）
 `FLUX` `SDXL` `SD 1.5` `Wan` `Qwen` 等一切模型名
-`HF` `Hugging Face` `CUDA` `GPU` `VRAM` `safetensors` `yaml` `json`
+`HF` `Hugging Face` `CUDA` `GPU` `safetensors` `yaml` `json`
 `RunPod` `Modal` `Ostris Cloud` 等服务名
 
 ### 固定中译
@@ -89,6 +89,11 @@ _Avoid_: 错误日志
 | Log(s) | 日志 |
 | Loss | 损失 |
 | Output | 输出 |
+| VRAM | 显存 |
+| checkpoint | 存档点 |
+| step / steps | 步 / 步数 |
+
+注：checkpoint/step 在英文技术行文（日志、文档、prompt）中仍以原词常见，此规则仅约束**界面 UI 标签**；日志流不在翻译范围（见 Boundaries）。此条为代码评审后的正式决议（2026-09-27），取代早期“一律保留英文”的草案。
 
 ## Flagged ambiguities
 

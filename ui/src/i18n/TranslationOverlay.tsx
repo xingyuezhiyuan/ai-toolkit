@@ -36,10 +36,14 @@ export default function TranslationOverlay() {
       .catch(() => {
         /* offline/auth errors: mirror + detection already applied */
       });
-    // Audit hooks (V2).
-    Object.defineProperty(window, '__i18nMisses', { get: () => [...stats.misses].sort() });
+    // Audit hooks (V2). configurable: React StrictMode double-mounts effects in dev.
+    Object.defineProperty(window, '__i18nMisses', {
+      get: () => [...stats.misses].sort(),
+      configurable: true,
+    });
     Object.defineProperty(window, '__i18nTemplateHits', {
       get: () => [...stats.templateHits].sort(),
+      configurable: true,
     });
     return () => {
       handle.stop();

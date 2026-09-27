@@ -1,6 +1,6 @@
 {
   "generatedBy": "tools/i18n/extract.mjs",
-  "count": 698,
+  "count": 697,
   "strings": [
     {
       "text": "- Custom -",
@@ -67,12 +67,6 @@
       "text": "(none)",
       "files": [
         "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
-      ]
-    },
-    {
-      "text": "&nbsp;",
-      "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
     },
     {
@@ -1507,7 +1501,7 @@
       ]
     },
     {
-      "text": "Edit caption &amp; boxes",
+      "text": "Edit caption & boxes",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]

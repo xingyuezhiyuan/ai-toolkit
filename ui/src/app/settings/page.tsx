@@ -160,12 +160,15 @@ function LanguageSwitch() {
   }, []);
   const choose = (l: Lang) => {
     if (l === lang) return;
-    setLang(l); // instant apply (mirror write included)
+    setLang(l, false); // apply instantly; mirror is written only once the server confirms (P1 truth)
     setSaveError(false);
-    apiClient.post('/api/settings', { LANGUAGE: l }).catch(err => {
-      console.error('Failed to persist language:', err);
-      setSaveError(true);
-    });
+    apiClient
+      .post('/api/settings', { LANGUAGE: l })
+      .then(() => setLang(l, true))
+      .catch(err => {
+        console.error('Failed to persist language:', err);
+        setSaveError(true);
+      });
   };
   const btn = (active: boolean) =>
     `px-4 py-1.5 text-sm transition-colors ${

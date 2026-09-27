@@ -13,6 +13,7 @@ export function createStats(): EngineStats {
 const originals = new WeakMap<Text, string>();
 const appliedText = new WeakMap<Text, string>();
 const origAttrs = new WeakMap<Element, Record<string, string>>();
+const appliedAttrs = new WeakMap<Element, Record<string, string>>();
 
 function walkText(root: Node, cb: (n: Text) => void) {
   const tw = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
@@ -62,6 +63,7 @@ export function applyAll(root: HTMLElement, lang: Lang, dict: Dict, stats: Engin
   root.querySelectorAll('*').forEach(el => {
     if (shouldSkip(el)) return;
     let store: Record<string, string> | undefined = origAttrs.get(el);
+    let seen: Record<string, string> | undefined = appliedAttrs.get(el);
     for (const attr of TRANSLATABLE_ATTRS) {
       const v = el.getAttribute(attr);
       if (v === null) continue;
@@ -69,15 +71,24 @@ export function applyAll(root: HTMLElement, lang: Lang, dict: Dict, stats: Engin
         store = {};
         origAttrs.set(el, store);
       }
-      if (store[attr] === undefined) store[attr] = v;
+      if (!seen) {
+        seen = {};
+        appliedAttrs.set(el, seen);
+      }
+      // Staleness guard (mirrors the text path): an attribute we did not write is
+      // a React/user update - adopt it as the new original instead of freezing it.
+      if (seen[attr] !== v) store[attr] = v;
       const base = store[attr];
       if (lang === 'en') {
         if (v !== base) el.setAttribute(attr, base);
+        seen[attr] = base;
         continue;
       }
       const hit = lookup(dict, base);
+      const out = hit ? hit.translation : base;
+      if (v !== out) el.setAttribute(attr, out);
+      seen[attr] = out;
       if (hit) {
-        if (el.getAttribute(attr) !== hit.translation) el.setAttribute(attr, hit.translation);
         if (hit.viaTemplate && hit.skeletonKey) stats.templateHits.add(hit.skeletonKey);
       } else {
         recordMiss(stats, allow, base);
@@ -110,11 +121,12 @@ export function watch(
   const observer = new MutationObserver(() => {
     if (applying || queued) return;
     queued = true;
-    requestAnimationFrame(() => {
+    // setTimeout (not rAF): hidden/background tabs pause rAF; timers still fire (clamped).
+    setTimeout(() => {
       if (!queued) return; // a synchronous requestReapply already handled the batch
       queued = false;
       applyNow();
-    });
+    }, 32);
   });
   observer.observe(root, {
     childList: true,

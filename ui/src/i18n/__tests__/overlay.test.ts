@@ -8,6 +8,7 @@ const dict: Dict = {
     'Save Settings': '保存设置',
     Delete: '删除',
     'Enter your Hugging Face token': '输入你的 Hugging Face 令牌',
+    'Enter training folder path': '输入训练文件夹路径',
   },
   templates: { 'Upsample (#)': '提升 ({0})' },
   allowEnglish: ['Keep Me English'],
@@ -79,6 +80,17 @@ describe('applyAll', () => {
     expect(misses).toContain('Some Unknown Text');
     expect(misses).not.toContain('Keep Me English');
   });
+
+  it('adopts React-updated attributes instead of freezing the stale original (C1)', () => {
+    run('zh');
+    const input = document.querySelector('input')!;
+    expect(input.getAttribute('placeholder')).toBe('输入你的 Hugging Face 令牌');
+    input.setAttribute('placeholder', 'Enter training folder path'); // React re-render
+    run('zh');
+    expect(input.getAttribute('placeholder')).toBe('输入训练文件夹路径');
+    run('en');
+    expect(input.getAttribute('placeholder')).toBe('Enter training folder path');
+  });
 });
 
 describe('watch', () => {
@@ -90,6 +102,16 @@ describe('watch', () => {
     span.textContent = 'Delete';
     document.getElementById('app')!.appendChild(span);
     applyAll(document.body, 'zh', dict, stats);
+    expect(span.textContent).toBe('删除');
+    handle.stop();
+  });
+
+  it('re-applies automatically when a mutation lands (real observer path)', async () => {
+    const handle = watch(document.body, () => 'zh', () => dict, stats);
+    const span = document.createElement('span');
+    span.textContent = 'Delete';
+    document.getElementById('app')!.appendChild(span); // MutationObserver fires
+    await new Promise(r => setTimeout(r, 120)); // debounce is setTimeout-based
     expect(span.textContent).toBe('删除');
     handle.stop();
   });
