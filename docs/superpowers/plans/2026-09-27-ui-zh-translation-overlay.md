@@ -169,7 +169,7 @@ const dict: Dict = {
   templates: {
     'Are you sure you want to delete # jobs? This action cannot be undone.':
       '确定要删除 {0} 个任务吗？此操作无法撤销。',
-    'Too many placeholders {0} {9}': '越界 {0} {9}',
+    'Too many placeholders # #': '越界 {0} {9}',
   },
   allowEnglish: [],
 };
