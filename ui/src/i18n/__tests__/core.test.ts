@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { skeleton, lookup, looksLikeUiText } from '../core';
+import { skeleton, lookup, looksLikeUiText, looksLikeData } from '../core';
 import type { Dict } from '../types';
 
 const dict: Dict = {
@@ -57,5 +57,18 @@ describe('looksLikeUiText', () => {
   it('filters non-UI text', () => {
     expect(looksLikeUiText('Hello world')).toBe(true);
     expect(looksLikeUiText('1234 .5678')).toBe(false);
+  });
+});
+
+describe('looksLikeData', () => {
+  it('recognizes runtime data shapes that are never UI copy', () => {
+    expect(looksLikeData('16.4 GB')).toBe(true);
+    expect(looksLikeData('1.3 / 26 GB')).toBe(true);
+    expect(looksLikeData('alpha')).toBe(true);
+    expect(looksLikeData('inference_engine_gpu0')).toBe(true);
+    expect(looksLikeData('Tongyi-MAI/Z-Image')).toBe(true);
+    expect(looksLikeData('NVIDIA GeForce RTX 3090')).toBe(true);
+    expect(looksLikeData('New Job')).toBe(false);
+    expect(looksLikeData('Learning Rate')).toBe(false);
   });
 });

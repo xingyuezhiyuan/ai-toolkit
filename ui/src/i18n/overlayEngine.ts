@@ -1,5 +1,5 @@
 import type { Dict, Lang } from './types';
-import { lookup, shouldSkip, looksLikeUiText, skeleton, TRANSLATABLE_ATTRS } from './core';
+import { lookup, shouldSkip, looksLikeUiText, looksLikeData, skeleton, TRANSLATABLE_ATTRS } from './core';
 
 export interface EngineStats {
   misses: Set<string>;
@@ -22,7 +22,7 @@ function walkText(root: Node, cb: (n: Text) => void) {
 
 function recordMiss(stats: EngineStats, allow: Set<string>, orig: string) {
   const t = orig.trim();
-  if (t && looksLikeUiText(t) && !allow.has(t) && !allow.has(skeleton(t))) {
+  if (t && looksLikeUiText(t) && !looksLikeData(t) && !allow.has(t) && !allow.has(skeleton(t))) {
     stats.misses.add(t);
   }
 }

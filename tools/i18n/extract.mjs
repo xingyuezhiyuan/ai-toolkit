@@ -15,7 +15,7 @@ const SRC = path.join(REPO, 'ui', 'src');
 const SKIP_FILES = new Set(['docs.tsx']);
 // Only collect from positions that can render into the DOM as visible text —
 // a string anywhere else (module paths, classNames, config keys) is noise.
-const ATTRS = new Set(['placeholder', 'title', 'alt', 'aria-label']);
+const ATTRS = new Set(['placeholder', 'title', 'alt', 'aria-label', 'label', 'instruction']);
 const PROP_NAMES = new Set(['title', 'message', 'instruction', 'label', 'text', 'ok', 'cancel']);
 
 const found = new Map(); // trimmed text -> Set(relfile)
@@ -58,7 +58,13 @@ function rendersInDom(node) {
 
 function parseFile(file) {
   const src = readFileSync(file, 'utf8');
-  const sf = ts.createSourceFile(file, src, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
+  const sf = ts.createSourceFile(
+    file,
+    src,
+    ts.ScriptTarget.Latest,
+    true,
+    /\.tsx$/.test(file) ? ts.ScriptKind.TSX : ts.ScriptKind.TS
+  );
   const visit = node => {
     if (ts.isJsxText(node)) add(node.text, file);
     if (ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)) {
@@ -77,7 +83,7 @@ function walkDir(dir) {
     if (st.isDirectory()) {
       if (e === 'i18n' || e === 'node_modules' || e === '.next' || e.startsWith('__')) continue;
       walkDir(p);
-    } else if (/\.tsx$/.test(e) && !SKIP_FILES.has(e)) parseFile(p);
+    } else if (/\.tsx?$/.test(e) && !SKIP_FILES.has(e)) parseFile(p);
   }
 }
 

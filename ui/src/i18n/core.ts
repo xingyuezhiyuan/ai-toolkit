@@ -78,3 +78,11 @@ export const TRANSLATABLE_ATTRS = ['placeholder', 'title', 'alt', 'aria-label'] 
 export function looksLikeUiText(s: string): boolean {
   return /[A-Za-z]{2}/.test(s);
 }
+
+/** Runtime data shapes that are never translatable UI copy (ADR-0002 user data). */
+export function looksLikeData(t: string): boolean {
+  return (/^[\d.,]+\s*(\/\s*[\d.,]+\s*)?[KMGT]?B$/i.test(t) || // sizes: '16.4 GB', '1.3 / 26 GB'
+    /^[a-z0-9_]+$/.test(t) || // snake identifiers: 'alpha', 'inference_engine_gpu0'
+    /^[A-Za-z0-9._-]+\/[A-Za-z0-9._-]+$/.test(t) || // hub repo paths: 'Tongyi-MAI/Z-Image'
+    /^(NVIDIA|AMD|Intel)\b/.test(t)); // hardware vendor names
+}

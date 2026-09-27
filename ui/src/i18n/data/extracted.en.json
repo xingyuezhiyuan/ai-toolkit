@@ -1,6 +1,6 @@
 {
   "generatedBy": "tools/i18n/extract.mjs",
-  "count": 536,
+  "count": 698,
   "strings": [
     {
       "text": "- Custom -",
@@ -11,7 +11,8 @@
     {
       "text": "- NONE -",
       "files": [
-        "ui\\src\\app\\jobs\\new\\options.tsx"
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
@@ -135,87 +136,119 @@
       ]
     },
     {
+      "text": "1 (default)",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
       "text": "1.58bit convrot (bitnet)",
       "files": [
-        "ui\\src\\app\\jobs\\new\\options.tsx"
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "128 (default)",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
       "text": "2 bit",
       "files": [
-        "ui\\src\\app\\jobs\\new\\options.tsx"
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
       "text": "2bit convrot",
       "files": [
-        "ui\\src\\app\\jobs\\new\\options.tsx"
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
       "text": "3 bit",
       "files": [
-        "ui\\src\\app\\jobs\\new\\options.tsx"
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
       "text": "3bit convrot",
       "files": [
-        "ui\\src\\app\\jobs\\new\\options.tsx"
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
       "text": "4 bit",
       "files": [
-        "ui\\src\\app\\jobs\\new\\options.tsx"
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
       "text": "4bit convrot",
       "files": [
-        "ui\\src\\app\\jobs\\new\\options.tsx"
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
       "text": "4bit convrot (nvfp4)",
       "files": [
-        "ui\\src\\app\\jobs\\new\\options.tsx"
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
       "text": "5 bit",
       "files": [
-        "ui\\src\\app\\jobs\\new\\options.tsx"
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "512 (default)",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
       "text": "5bit convrot",
       "files": [
-        "ui\\src\\app\\jobs\\new\\options.tsx"
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
       "text": "6 bit",
       "files": [
-        "ui\\src\\app\\jobs\\new\\options.tsx"
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
       "text": "6bit convrot",
       "files": [
-        "ui\\src\\app\\jobs\\new\\options.tsx"
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
       "text": "7 bit",
       "files": [
-        "ui\\src\\app\\jobs\\new\\options.tsx"
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
       "text": "7bit convrot",
       "files": [
-        "ui\\src\\app\\jobs\\new\\options.tsx"
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
@@ -225,9 +258,39 @@
       ]
     },
     {
+      "text": "8bit convrot (default)",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
       "text": "Accuracy Recovery Adapters",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Ace Step",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "ACE-Step (caption, lyrics, bpm, key, time signature, duration)",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "ACE-Step/acestep-captioner",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "ACE-Step/acestep-transcriber",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
@@ -286,6 +349,12 @@
       ]
     },
     {
+      "text": "Add Image",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Add Images",
       "files": [
         "ui\\src\\app\\datasets\\[datasetName]\\page.tsx"
@@ -302,7 +371,8 @@
       "files": [
         "ui\\src\\app\\generate\\page.tsx",
         "ui\\src\\components\\CaptionSimpleJob.tsx",
-        "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+        "ui\\src\\components\\generate\\LoraBrowserModal.tsx",
+        "ui\\src\\components\\MergeLoRAsModal.tsx"
       ]
     },
     {
@@ -350,6 +420,18 @@
       ]
     },
     {
+      "text": "Advanced Sampling",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Aesthetics",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
       "text": "AI Toolkit",
       "files": [
         "ui\\src\\components\\AuthWrapper.tsx"
@@ -362,6 +444,36 @@
       ]
     },
     {
+      "text": "ai-toolkit/Huihui-Qwen3-Omni-30B-A3B-Thinking-abliterated",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "ai-toolkit/Qwen2.5-Omni-7B (convrot8)",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "ai-toolkit/Qwen3-Omni-30B-A3B-Instruct",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "ai-toolkit/Qwen3-Omni-30B-A3B-Thinking",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "Anchor Class",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "and add it on the",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
@@ -371,6 +483,12 @@
       "text": "Applied as sidechains at caption time; the model weights are never merged.",
       "files": [
         "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Architecture",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
       ]
     },
     {
@@ -428,6 +546,24 @@
       ]
     },
     {
+      "text": "Audio Loss Multiplier",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Audio Normalize",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Audio Preserve Pitch",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Auto",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
@@ -443,6 +579,12 @@
       "text": "Auto Captioning...",
       "files": [
         "ui\\src\\components\\AutoCaptionButton.tsx"
+      ]
+    },
+    {
+      "text": "Auto Frame Count",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
     },
     {
@@ -482,7 +624,20 @@
       ]
     },
     {
+      "text": "Batch Size",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
       "text": "BF16",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Blank Prompt Preservation",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
@@ -494,9 +649,27 @@
       ]
     },
     {
+      "text": "BPP Loss Multiplier",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Buffering…",
       "files": [
         "ui\\src\\components\\AudioPlayer.tsx"
+      ]
+    },
+    {
+      "text": "Cache Latents",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Cache Text Embeddings",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
     },
     {
@@ -551,15 +724,40 @@
       ]
     },
     {
+      "text": "Caption Dropout Rate",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Caption ext",
       "files": [
         "ui\\src\\app\\datasets\\[datasetName]\\page.tsx"
       ]
     },
     {
+      "text": "Caption Extension",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Caption Format",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Caption is not valid JSON, so the form editor is unavailable. Fix it in the raw text below.",
       "files": [
         "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Caption Prompt",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
       ]
     },
     {
@@ -635,6 +833,12 @@
       ]
     },
     {
+      "text": "Captioner Type",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Captioning",
       "files": [
         "ui\\src\\components\\AutoCaptionButton.tsx"
@@ -686,6 +890,12 @@
       "text": "Click to choose a .safetensors file, or drop one here",
       "files": [
         "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Clip outliers",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
       ]
     },
     {
@@ -747,6 +957,24 @@
       ]
     },
     {
+      "text": "Compile Model",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Compile Models",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Compile Options",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Concept Slider",
       "files": [
         "ui\\src\\app\\jobs\\new\\options.tsx"
@@ -763,6 +991,48 @@
       "text": "Confirm Action",
       "files": [
         "ui\\src\\components\\DocModal.tsx"
+      ]
+    },
+    {
+      "text": "Contrastive Guidance Loss",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Control Dataset",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Control Dataset 1",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Control Dataset 2",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Control Dataset 3",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Control Images",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Conv Rank",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
     },
     {
@@ -856,6 +1126,12 @@
       ]
     },
     {
+      "text": "Data Type",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Dataset",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
@@ -936,6 +1212,12 @@
     },
     {
       "text": "DDPM",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Default Caption",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
@@ -1067,13 +1349,67 @@
       ]
     },
     {
+      "text": "Description",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Differential Guidance Scale",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Differential Output Preservation",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Disable Sampling",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Display",
       "files": [
         "ui\\src\\components\\JobLossGraph.tsx"
       ]
     },
     {
+      "text": "Do Audio",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Do Differential Guidance",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Do I2V",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "do not include the validation images in the dataset",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "DOP Loss Multiplier",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "DOP Preservation Class",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
@@ -1148,6 +1484,18 @@
     },
     {
       "text": "Duplicate Dataset",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Duration (s)",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Duration (seconds)",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
@@ -1298,6 +1646,18 @@
     },
     {
       "text": "eg. woman",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "EMA (Exponential Moving Average)",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "EMA Decay",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
@@ -1486,6 +1846,18 @@
       ]
     },
     {
+      "text": "Extract Vocals Before Transcribing",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Extras Name or Path",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
       "text": "extras_name_or_path",
       "files": [
         "ui\\src\\app\\generate\\page.tsx"
@@ -1535,6 +1907,13 @@
       ]
     },
     {
+      "text": "Files uploaded successfully",
+      "files": [
+        "ui\\src\\app\\api\\datasets\\upload\\route.ts",
+        "ui\\src\\app\\api\\img\\upload\\route.ts"
+      ]
+    },
+    {
       "text": "filter",
       "files": [
         "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
@@ -1544,6 +1923,12 @@
       "text": "Finished with errors. See log below.",
       "files": [
         "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Fixed Caption",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
       ]
     },
     {
@@ -1559,9 +1944,16 @@
       ]
     },
     {
+      "text": "Flipping",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "float8",
       "files": [
-        "ui\\src\\app\\jobs\\new\\options.tsx"
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
@@ -1589,6 +1981,12 @@
       ]
     },
     {
+      "text": "Force First Sample",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Force stop",
       "files": [
         "ui\\src\\app\\generate\\page.tsx"
@@ -1604,6 +2002,19 @@
       "text": "FP32",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "FPS",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Frames",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
       ]
     },
     {
@@ -1652,6 +2063,13 @@
       ]
     },
     {
+      "text": "GPU ID",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
       "text": "GPU Load",
       "files": [
         "ui\\src\\components\\GPUWidget.tsx"
@@ -1670,9 +2088,46 @@
       ]
     },
     {
+      "text": "Gradient Accumulation",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Guidance",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Guidance Loss Target",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Guidance Scale",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Height",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "High Noise",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "High-level description",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
       ]
     },
     {
@@ -1697,6 +2152,24 @@
       "text": "Huggingface",
       "files": [
         "ui\\src\\app\\settings\\page.tsx"
+      ]
+    },
+    {
+      "text": "huihui-ai/Huihui-Qwen3-VL-8B-Instruct-abliterated",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "huihui-ai/Huihui-Qwen3.6-27B-abliterated",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "Ideogram 4 Captioner",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
     {
@@ -1760,6 +2233,12 @@
       ]
     },
     {
+      "text": "Is Regularization",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "job",
       "files": [
         "ui\\src\\components\\JobsTable.tsx"
@@ -1786,9 +2265,21 @@
       ]
     },
     {
+      "text": "Keep Lyric Timestamps",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Kill the engine process",
       "files": [
         "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "KV Cache",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
     },
     {
@@ -1810,9 +2301,16 @@
       ]
     },
     {
+      "text": "Layer offloading",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
       "text": "Layer Offloading",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
       ]
     },
     {
@@ -1822,7 +2320,31 @@
       ]
     },
     {
+      "text": "Learning Rate",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Lighting",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
       "text": "Linear",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Linear Rank",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "LLM Prompt",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
@@ -1890,6 +2412,12 @@
       ]
     },
     {
+      "text": "Log Y",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
       "text": "lokr",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
@@ -1897,6 +2425,12 @@
     },
     {
       "text": "LoKr",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "LoKr Factor",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
@@ -1920,6 +2454,12 @@
       ]
     },
     {
+      "text": "LoRA Weight",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "LoRAs",
       "files": [
         "ui\\src\\app\\generate\\page.tsx",
@@ -1933,9 +2473,23 @@
       ]
     },
     {
+      "text": "Loss Type",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Low Noise",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Low VRAM",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
       ]
     },
     {
@@ -1966,6 +2520,30 @@
       "text": "markStopped",
       "files": [
         "ui\\src\\components\\JobActionBar.tsx"
+      ]
+    },
+    {
+      "text": "Match Target Res",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Max New Tokens",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Max Resolution",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Max Step Saves to Keep",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
     },
     {
@@ -2018,6 +2596,12 @@
       ]
     },
     {
+      "text": "Merge into weights",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
       "text": "Merge LoRAs",
       "files": [
         "ui\\src\\components\\MergeLoRAsModal.tsx"
@@ -2045,6 +2629,12 @@
       "text": "Model",
       "files": [
         "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Model Architecture",
+      "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
     },
@@ -2121,6 +2711,12 @@
       ]
     },
     {
+      "text": "MOSS-Music",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
       "text": "multiline",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
@@ -2136,6 +2732,32 @@
       "text": "Name",
       "files": [
         "ui\\src\\components\\JobsTable.tsx"
+      ]
+    },
+    {
+      "text": "Name or Path",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Name or Path 2",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Negative prompt",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Negative Prompt",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
     },
     {
@@ -2248,6 +2870,18 @@
       ]
     },
     {
+      "text": "Num Frames",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Num Repeats",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "number",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
@@ -2291,6 +2925,12 @@
       ]
     },
     {
+      "text": "Offload %",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
       "text": "On",
       "files": [
         "ui\\src\\app\\generate\\page.tsx",
@@ -2310,9 +2950,28 @@
       ]
     },
     {
+      "text": "OpenMOSS-Team/MOSS-Music-8B-Instruct",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
       "text": "optimizer",
       "files": [
         "ui\\src\\components\\FilesWidget.tsx"
+      ]
+    },
+    {
+      "text": "Optimizer",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Options",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
       ]
     },
     {
@@ -2339,6 +2998,18 @@
       "text": "Ostris AI-Toolkit v",
       "files": [
         "ui\\src\\components\\Sidebar.tsx"
+      ]
+    },
+    {
+      "text": "Other",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Output Filename",
+      "files": [
+        "ui\\src\\components\\MergeLoRAsModal.tsx"
       ]
     },
     {
@@ -2378,6 +3049,12 @@
       ]
     },
     {
+      "text": "Positive Prompt",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Power Draw",
       "files": [
         "ui\\src\\components\\GPUWidget.tsx"
@@ -2410,13 +3087,20 @@
     {
       "text": "Prompt",
       "files": [
-        "ui\\src\\app\\generate\\page.tsx"
+        "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
     },
     {
       "text": "Prompt ##",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Prompt Preset",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
       ]
     },
     {
@@ -2438,9 +3122,27 @@
       ]
     },
     {
+      "text": "Quantize",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Quantize / Compile",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Quantize Text Encoder",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "Quantize Transformer",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
       ]
     },
     {
@@ -2486,9 +3188,75 @@
       ]
     },
     {
+      "text": "Qwen/Qwen2.5-Omni-3B",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "Qwen/Qwen2.5-Omni-7B",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "Qwen/Qwen3-VL-2B-Instruct",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "Qwen/Qwen3-VL-4B-Instruct",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "Qwen/Qwen3-VL-8B-Instruct",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "Qwen/Qwen3.6-27B",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "Qwen2.5-Omni",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "Qwen3-Omni",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "Qwen3-VL",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
       "text": "read token",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Recaption",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
       ]
     },
     {
@@ -2508,6 +3276,12 @@
       "text": "Refreshing...",
       "files": [
         "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Regularization",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
     },
     {
@@ -2550,6 +3324,12 @@
       ]
     },
     {
+      "text": "Resolutions",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Restart",
       "files": [
         "ui\\src\\components\\AudioPlayer.tsx"
@@ -2580,6 +3360,12 @@
       ]
     },
     {
+      "text": "Sample Every",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Sample Image",
       "files": [
         "ui\\src\\components\\SampleImages.tsx",
@@ -2599,6 +3385,18 @@
       ]
     },
     {
+      "text": "Sample Start Step",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Sample Steps",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "sample.ctrl_img",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
@@ -2606,6 +3404,12 @@
     },
     {
       "text": "sample.duration",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Sampler",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
@@ -2622,6 +3426,12 @@
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
         "ui\\src\\components\\IdeogramCaptionSidebar.tsx",
         "ui\\src\\components\\PromptBoxEditorModal.tsx"
+      ]
+    },
+    {
+      "text": "Save Every",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
     },
     {
@@ -2658,6 +3468,12 @@
       ]
     },
     {
+      "text": "Script timed out after 20 minutes",
+      "files": [
+        "ui\\src\\app\\api\\scripts\\route.ts"
+      ]
+    },
+    {
       "text": "Scroll to Bottom",
       "files": [
         "ui\\src\\components\\SampleImages.tsx"
@@ -2673,6 +3489,18 @@
       "text": "Scrub",
       "files": [
         "ui\\src\\components\\AudioPlayer.tsx"
+      ]
+    },
+    {
+      "text": "Seed",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Seed (-1 random)",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx"
       ]
     },
     {
@@ -2726,6 +3554,7 @@
     {
       "text": "Settings",
       "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
         "ui\\src\\app\\settings\\page.tsx"
       ]
     },
@@ -2785,6 +3614,12 @@
       ]
     },
     {
+      "text": "Skip First Sample",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Slider",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
@@ -2812,6 +3647,12 @@
       "text": "Speed",
       "files": [
         "ui\\src\\components\\JobOverview.tsx"
+      ]
+    },
+    {
+      "text": "Stages to Train",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
     },
     {
@@ -2883,6 +3724,8 @@
     {
       "text": "Steps",
       "files": [
+        "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
         "ui\\src\\components\\JobsTable.tsx"
       ]
     },
@@ -2936,7 +3779,31 @@
       ]
     },
     {
+      "text": "Switch Every",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Target",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Target Class",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Target Dataset",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Target Type",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
@@ -2961,6 +3828,31 @@
       ]
     },
     {
+      "text": "Text (rendered in image)",
+      "files": [
+        "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "Text Encoder",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Text Encoder Offload %",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Text Encoder Optimizations",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "The engine is starting. Model options appear once its server is up.",
       "files": [
         "ui\\src\\app\\generate\\page.tsx"
@@ -2979,6 +3871,12 @@
       ]
     },
     {
+      "text": "Thinking",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
       "text": "This loads a model and runs on the GPU. You need at least 13GB of free VRAM to run this, so make sure the\r\n            GPU is idle (no training or other jobs running) before starting, or it may run out of memory.",
       "files": [
         "ui\\src\\components\\UpsamplePromptsModal.tsx"
@@ -2994,6 +3892,18 @@
       "text": "This will create a new folder with the name below in your dataset folder.",
       "files": [
         "ui\\src\\app\\datasets\\page.tsx"
+      ]
+    },
+    {
+      "text": "Timestep Bias",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Timestep Type",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
     },
     {
@@ -3041,6 +3951,12 @@
       ]
     },
     {
+      "text": "Training Adapter Path",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Training Folder Path",
       "files": [
         "ui\\src\\app\\settings\\page.tsx"
@@ -3053,7 +3969,38 @@
       ]
     },
     {
+      "text": "Training Name",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Training saved successfully!",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Transformer",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Transformer Offload %",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Trend",
+      "files": [
+        "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Trigger Word",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
@@ -3082,6 +4029,18 @@
       "text": "UI downsample for huge runs.",
       "files": [
         "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Unconditional Adapter Path",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Unload TE",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
     },
     {
@@ -3202,9 +4161,21 @@
       ]
     },
     {
+      "text": "Use EMA",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Use this LoRA",
       "files": [
         "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
+      ]
+    },
+    {
+      "text": "Validate Every",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
     },
     {
@@ -3220,7 +4191,19 @@
       ]
     },
     {
+      "text": "Validation Resolution",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Validation runs a stable loss check on a fixed set of images. Each image is encoded once at startup\r\n                    and predicted at the selected sigmas with fixed seeds, so the result is always deterministic and\r\n                    comparable across the run. The average loss is logged as val/loss every time validation runs. The\r\n                    images need to match the concept of your dataset, but",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Validation Sigmas",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
@@ -3250,6 +4233,12 @@
       ]
     },
     {
+      "text": "Walk Seed",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Warning: This software may modify datasets so it is recommended you keep a backup somewhere else\r\n                        or have a dedicated folder for this software.",
       "files": [
         "ui\\src\\app\\settings\\page.tsx"
@@ -3268,6 +4257,12 @@
       ]
     },
     {
+      "text": "Weight Decay",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "Weighted",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
@@ -3280,6 +4275,13 @@
       ]
     },
     {
+      "text": "Width",
+      "files": [
+        "ui\\src\\app\\generate\\page.tsx",
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
       "text": "You will also need to create a Huggingface",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
@@ -3289,6 +4291,12 @@
       "text": "Your generation will appear here",
       "files": [
         "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "YuE2 (description, then [Lyrics] block)",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
       ]
     }
   ]

@@ -196,3 +196,6 @@ testing/.model_test_outputs
 testing/.engine_test_outputs
 testing/.*
 /issue_review
+# i18n tooling artifacts
+tools/i18n/node_modules/
+tools/i18n/artifacts/
