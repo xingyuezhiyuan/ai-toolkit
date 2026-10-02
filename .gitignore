@@ -167,6 +167,9 @@ cython_debug/
 /env.sh
 /models
 /datasets
+# local stand-in for the hardcoded 'Qwen/Qwen3-8B' text encoder path (resolved
+# relative to the toolkit root by the trainer); hardlinks into models/
+/Qwen
 /custom/*
 !/custom/.gitkeep
 /.tmp
