@@ -18,6 +18,24 @@ echo.
 echo   AI Toolkit Manager - Windows
 echo.
 
+REM ---- 0. Close a previously running UI before doing anything else ----
+REM A leftover server keeps ui\node_modules\.prisma\client\query_engine-*.dll
+REM locked, so `prisma db push` fails with EPERM on rename, and `concurrently
+REM --restart-tries -1` would respawn anything we kill by child pid alone. So
+REM match both the pid listening on the UI port and the npm/concurrently roots
+REM (only ever matched by their distinctive script names in the command line),
+REM then kill each whole tree.
+set "KILL_PREV=%TEMP%\aitk_kill_prev.ps1"
+>  "%KILL_PREV%" echo $pids = ^@^(
+>>"%KILL_PREV%" echo     ^@^(Get-NetTCPConnection -LocalPort 8675 -State Listen -ErrorAction SilentlyContinue ^| %%{ $_.OwningProcess }^) +
+>>"%KILL_PREV%" echo     ^@^(Get-CimInstance Win32_Process -Filter "Name='node.exe'" -ErrorAction SilentlyContinue ^| %%{ if ^($_.CommandLine -match 'db_build_start^|cron.worker.js^|cron.fileServer.js'^) { $_.ProcessId } }^)
+>>"%KILL_PREV%" echo ^)
+>>"%KILL_PREV%" echo $pids = ^@^(^($pids ^| Sort-Object -Unique^) ^| ?{ $_ -ne $PID }^)
+>>"%KILL_PREV%" echo if ^($pids^) { Write-Host 'Closing previously running AI Toolkit instances ...'; foreach ^($p in $pids^) { taskkill /PID $p /T /F 2^>^&1 ^| Out-Null } } ^else { Write-Host 'No previous instance running.' }
+powershell -NoProfile -ExecutionPolicy ByPass -File "%KILL_PREV%"
+del "%KILL_PREV%" >nul 2>&1
+timeout /t 2 /nobreak >nul
+
 REM Clear env vars that let a stray conda/pyenv/system Python hijack things
 set PYTHONPATH=
 set PYTHONHOME=
