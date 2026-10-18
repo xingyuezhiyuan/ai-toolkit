@@ -167,9 +167,17 @@ class SDTrainer(BaseSDTrainProcess):
                         prompt, self.trigger_word, add_if_not_present=False
                     )
 
-                # needed so we can autoparse the prompt to handle flags
+                # needed so we can autoparse the prompt to handle flags. The
+                # size and frame count must match the sample that will actually
+                # be generated: models that encode control images into the text
+                # embeddings size a reference against this target, so a default
+                # 512x512 here would cache reference slots the generation pass
+                # (which runs at the sample's size) cannot reuse.
                 gen_img_config = GenerateImageConfig(
                     prompt=prompt, # it will autoparse the prompt
+                    width=sample_item.width,
+                    height=sample_item.height,
+                    num_frames=sample_item.num_frames,
                     negative_prompt=sample_item.neg,
                     output_path=output_path,
                     ctrl_img=sample_item.ctrl_img,
