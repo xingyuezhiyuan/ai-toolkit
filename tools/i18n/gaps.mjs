@@ -1,49 +1,42 @@
 // helper: print all coverage gaps (extracted strings missing from zh dictionary)
-import { readFileSync } from 'fs';
+// Loads the real dictionary modules (via TypeScript transpile) so the report
+// matches ui/src/i18n/__tests__/coverage.test.ts exactly.
+import { readFileSync, writeFileSync, mkdtempSync } from 'fs';
+import { createRequire } from 'module';
+import { tmpdir } from 'os';
 import path from 'path';
+import { pathToFileURL } from 'url';
 import { fileURLToPath } from 'url';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(__dirname, '..', '..');
+const DATA = path.join(REPO, 'ui', 'src', 'i18n', 'data');
+const require = createRequire(import.meta.url);
+const ts = require(path.join(REPO, 'ui', 'node_modules', 'typescript'));
 
-const NUM_RE = /\d[\d,]*(?:\.\d+)?/g;
-function sk(t) {
-  return t
-    .replace(/"[^"]*"/g, '"#"')
-    .replace(NUM_RE, '#')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
-
-const extracted = JSON.parse(
-  readFileSync(path.join(REPO, 'ui', 'src', 'i18n', 'data', 'extracted.en.json'), 'utf8')
-);
-// crude parse of zh.ts maps — enough for gap listing (keys are quoted strings)
-const zhSrc = readFileSync(path.join(REPO, 'ui', 'src', 'i18n', 'data', 'zh.ts'), 'utf8');
-const exactBlock = zhSrc.slice(zhSrc.indexOf('exact: {'), zhSrc.indexOf('templates: {'));
-const tplBlock = zhSrc.slice(zhSrc.indexOf('templates: {'), zhSrc.indexOf('allowEnglish: ['));
-const allowBlock = zhSrc.slice(zhSrc.indexOf('allowEnglish: ['));
-const keys = block => {
-  const out = new Set();
-  let m;
-  const reI = /(?:^|[\s,{])([A-Za-z_$][\w$]*)\s*:/g; // bare identifier keys
-  while ((m = reI.exec(block))) out.add(m[1]);
-  const re = /'((?:[^'\\]|\\.)*)'\s*:/g;
-  while ((m = re.exec(block))) out.add(m[1]);
-  const reD = /"((?:[^"\\]|\\.)*)"\s*:/g; // double-quoted keys (e.g. strings containing ')
-  while ((m = reD.exec(block))) out.add(m[1]);
-  return out;
+const dir = mkdtempSync(path.join(tmpdir(), 'aitk-i18n-'));
+const transpile = (src, name) => {
+  const js = ts.transpileModule(readFileSync(src, 'utf8'), {
+    compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2020 },
+  }).outputText;
+  const out = path.join(dir, `${name}.mjs`);
+  writeFileSync(out, js.replace(/from '\.\/docs\.zh'/g, "from './docs.zh.mjs'"));
+  return pathToFileURL(out).href;
 };
-const allowVals = new Set();
-{
-  const re = /'((?:[^'\\]|\\.)*)'|`((?:[^`\\]|\\.)*)`/g;
-  let m;
-  while ((m = re.exec(allowBlock))) allowVals.add(m[1] ?? m[2]);
-}
-const exactKeys = keys(exactBlock);
-const tplKeys = keys(tplBlock);
 
+transpile(path.join(DATA, 'docs.zh.ts'), 'docs.zh');
+const zh = (await import(transpile(path.join(DATA, 'zh.ts'), 'zh'))).default;
+
+const extracted = JSON.parse(readFileSync(path.join(DATA, 'extracted.en.json'), 'utf8'));
+const NUM_RE = /\d[\d,]*(?:\.\d+)?/g;
+const sk = t => t.replace(/"[^"]*"/g, '"#"').replace(NUM_RE, '#').replace(/\s+/g, ' ').trim();
+const allow = new Set(zh.allowEnglish);
 const missing = extracted.strings
   .map(s => s.text)
-  .filter(t => !exactKeys.has(t) && !tplKeys.has(sk(t)) && !allowVals.has(t) && !allowVals.has(sk(t)));
+  .filter(t => {
+    const k = sk(t);
+    return zh.exact[t] === undefined && zh.templates[k] === undefined && !allow.has(t) && !allow.has(k);
+  });
+
 console.log('missing', missing.length);
 missing.forEach(t => console.log(JSON.stringify(t)));

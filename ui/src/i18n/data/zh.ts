@@ -1,4 +1,5 @@
 import type { Dict } from '../types';
+import { docsExact, docsAllowEnglish } from './docs.zh';
 
 // zh dictionary — authored from ui/src/i18n/data/extracted.en.json per CONTEXT.md
 // core glossary (S2). Keys are trimmed originals; templates use skeleton keys
@@ -6,6 +7,8 @@ import type { Dict } from '../types';
 
 const zh: Dict = {
   exact: {
+    // docs-modal copy (docs.tsx rendered text nodes) — merged first so UI labels win on ties
+    ...docsExact,
     // --- brand/label exceptions handled in allowEnglish; here: translated UI copy ---
     '- Custom -': '- 自定义 -',
     '- NONE -': '- 无 -',
@@ -559,6 +562,15 @@ const zh: Dict = {
     'Collapse settings': '收起设置面板',
     'Show log': '显示日志',
     'Hide log': '隐藏日志',
+    // --- Qwen3.8 captioner controls (upstream merge 2026-10) ---
+    'CUDA Graph Decode': 'CUDA Graph 解码',
+    'MTP Draft Depth': 'MTP 草稿深度',
+    'MTP Speculative Decoding': 'MTP 推测解码',
+    'Optional system message': '可选的系统消息',
+    'Pool Datasets': '数据集池化',
+    'System Prompt': '系统 Prompt',
+    'Video FPS': '视频 FPS',
+    'Vision Tower bf16': '视觉塔 bf16',
   },
   templates: {
     // --- dynamic slots: "#" (quoted phrase) / "#" (number), backfilled into {0},{1}.. ---
@@ -614,11 +626,23 @@ const zh: Dict = {
       '训练信息将存储在此处。必须是绝对路径，留空则默认使用项目根目录下的 output 文件夹。',
   },
   allowEnglish: [
+    // docs code samples / proper nouns
+    ...docsAllowEnglish,
     // captioner/LLM model enums shown in dropdowns (repo paths & product names)
     'Ace Step',
     'ACE-Step (caption, lyrics, bpm, key, time signature, duration)',
     'ACE-Step/acestep-captioner',
     'ACE-Step/acestep-transcriber',
+    // config paths used as identifiers (never rendered as prose) & Qwen3.8 labels
+    'caption.cuda_graph',
+    'caption.mtp',
+    'caption.system_prompt',
+    'caption.video_fps',
+    'caption.vision_bf16',
+    'Comfy-Org/Qwen3.8-27B (W4A8)',
+    'Qwen/Qwen3.8-27B (bf16, quantized on load)',
+    'Qwen3.8 27B',
+    '4bit convrot W4A8 (int4 weights, int8 activations)',
     'ai-toolkit/Huihui-Qwen3-Omni-30B-A3B-Thinking-abliterated',
     'ai-toolkit/Qwen2.5-Omni-7B (convrot8)',
     'ai-toolkit/Qwen3-Omni-30B-A3B-Instruct',

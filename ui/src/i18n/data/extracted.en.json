@@ -1,6 +1,6 @@
 {
   "generatedBy": "tools/i18n/extract.mjs",
-  "count": 697,
+  "count": 789,
   "strings": [
     {
       "text": "- Custom -",
@@ -16,15 +16,33 @@
       ]
     },
     {
-      "text": ": the LoRA deltas are added into the model weights. Quantized weights\r\n                              are dequantized, merged, and re-quantized with stochastic rounding so small deltas are not\r\n                              rounded away. Merged weights cannot be un-merged, so changing the LoRA set or strengths\r\n                              reloads the affected components. Slightly faster per step than the dynamic path.",
+      "text": "— inserts the text of the file next to the media file that has the same name and the given extension. For",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": ": the LoRA deltas are added into the model weights. Quantized weights are dequantized, merged, and re-quantized with stochastic rounding so small deltas are not rounded away. Merged weights cannot be un-merged, so changing the LoRA set or strengths reloads the affected components. Slightly faster per step than the dynamic path.",
       "files": [
         "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": ". The file is inserted as plain text exactly as it is on disk (json included). If the file does not exist, the token is replaced with nothing.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
       "text": ". They must be images containing the concept you want to train, but not an image trained on.",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": ". This feature is early and will have many updates and changes, so be aware it may not work consistently from one update to the next. It will also only work with certain models.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -40,7 +58,7 @@
       ]
     },
     {
-      "text": ".uplot,\n        .uplot * {\n          font-family: inherit;\n        }\n        .uplot .u-legend {\n          color: rgba(255, 255, 255, 0.85);\n          font-size: 12px;\n          margin-top: 4px;\n        }\n        .uplot .u-legend th,\n        .uplot .u-legend td {\n          color: rgba(255, 255, 255, 0.85);\n        }\n        .uplot .u-legend .u-marker {\n          border-radius: 2px;\n        }\n        .uplot .u-select {\n          background: rgba(59, 130, 246, 0.15);\n          border: 1px solid rgba(59, 130, 246, 0.4);\n        }",
+      "text": ".uplot, .uplot * { font-family: inherit; } .uplot .u-legend { color: rgba(255, 255, 255, 0.85); font-size: 12px; margin-top: 4px; } .uplot .u-legend th, .uplot .u-legend td { color: rgba(255, 255, 255, 0.85); } .uplot .u-legend .u-marker { border-radius: 2px; } .uplot .u-select { background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.4); }",
       "files": [
         "ui\\src\\components\\JobLossGraph.tsx"
       ]
@@ -58,15 +76,39 @@
       ]
     },
     {
-      "text": "(default): each LoRA is applied dynamically as an extra term on the\r\n                              layers it targets. Strength changes take effect on the next generation and adding or\r\n                              removing a LoRA never reloads the model.",
+      "text": "(default): each LoRA is applied dynamically as an extra term on the layers it targets. Strength changes take effect on the next generation and adding or removing a LoRA never reloads the model.",
       "files": [
         "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "(experimental)",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
       "text": "(none)",
       "files": [
         "ui\\src\\components\\IdeogramCaptionSidebar.tsx"
+      ]
+    },
+    {
+      "text": "[trigger]",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "/data/subfolder/img01.json",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "/data/subfolder/img01.webp",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -112,6 +154,24 @@
       ]
     },
     {
+      "text": "<caption.ext>",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "<caption.json>",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "<caption.txt>",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "~ Custom ~",
       "files": [
         "ui\\src\\components\\formInputs.tsx"
@@ -149,6 +209,12 @@
       ]
     },
     {
+      "text": "2 (default)",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
       "text": "2 bit",
       "files": [
         "ui\\src\\app\\jobs\\new\\options.tsx",
@@ -159,6 +225,12 @@
       "text": "2bit convrot",
       "files": [
         "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "3 (default)",
+      "files": [
         "ui\\src\\helpers\\captionOptions.ts"
       ]
     },
@@ -192,6 +264,13 @@
     },
     {
       "text": "4bit convrot (nvfp4)",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\options.tsx",
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "4bit convrot W4A8 (int4 weights, int8 activations)",
       "files": [
         "ui\\src\\app\\jobs\\new\\options.tsx",
         "ui\\src\\helpers\\captionOptions.ts"
@@ -468,6 +547,12 @@
       ]
     },
     {
+      "text": "and",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "and add it on the",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
@@ -542,19 +627,22 @@
     {
       "text": "Audio Loss Multiplier",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
       "text": "Audio Normalize",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
       "text": "Audio Preserve Pitch",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -578,7 +666,8 @@
     {
       "text": "Auto Frame Count",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -633,7 +722,14 @@
     {
       "text": "Blank Prompt Preservation",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "Blank Prompt Preservation (BPP) is a technique to help preserve the current models knowledge when unprompted. This will not only help the model become more flexible, but will also help the quality of your concept during inference, especially when a model uses CFG (Classifier Free Guidance) on inference. At each step during training, a prior prediction is made with a blank prompt and with the LoRA disabled. This prediction is then used as a target on an additional training step with a blank prompt, to preserve the model's knowledge when no prompt is given. This helps the model to not overfit to the prompt and retain its generalization capabilities.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -663,7 +759,14 @@
     {
       "text": "Cache Text Embeddings",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "Caching text embeddings will process and cache all the text embeddings from the text encoder to the disk. The text encoder will be unloaded from the GPU. This does not work with things that dynamically change the prompt such as trigger words, caption dropout, etc.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -718,9 +821,22 @@
       ]
     },
     {
+      "text": "Caption dropout also works when caching text embeddings. An additional embedding for the dropout caption (blank, or the trigger word alone) is cached to disk alongside the normal one, and it is randomly swapped in at train time at this rate.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "Caption Dropout Rate",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "Caption dropout rate is the probability that the caption for an image will be dropped (replaced with a blank caption) for any given training step. For example, a value of 0.05 will drop the caption around 5% of the time. Dropping captions helps the model learn the concept being trained without relying entirely on the caption, and helps preserve the model's ability to generate without a prompt. If a trigger word is set, the trigger word is still used when the caption is dropped, so the model still associates the dropped samples with your trigger word. Regularization images, or images without a trigger word, drop to a fully blank caption.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -751,7 +867,8 @@
     {
       "text": "Caption Prompt",
       "files": [
-        "ui\\src\\components\\CaptionSimpleJob.tsx"
+        "ui\\src\\components\\CaptionSimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -774,6 +891,12 @@
     },
     {
       "text": "caption.caption_prompt",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "caption.cuda_graph",
       "files": [
         "ui\\src\\components\\CaptionSimpleJob.tsx"
       ]
@@ -821,7 +944,31 @@
       ]
     },
     {
+      "text": "caption.mtp",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "caption.system_prompt",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
       "text": "caption.thinking",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "caption.video_fps",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "caption.vision_bf16",
       "files": [
         "ui\\src\\components\\CaptionSimpleJob.tsx"
       ]
@@ -951,6 +1098,12 @@
       ]
     },
     {
+      "text": "Comfy-Org/Qwen3.8-27B (W4A8)",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
       "text": "Compile Model",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
@@ -996,7 +1149,8 @@
     {
       "text": "Control Dataset",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -1021,6 +1175,12 @@
       "text": "Control Images",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Control images for a dataset will also be flipped to match the images, so they will always match on the pixel level.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -1087,6 +1247,12 @@
       "text": "Ctrl/Cmd + Enter",
       "files": [
         "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "CUDA Graph Decode",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
       ]
     },
     {
@@ -1349,15 +1515,40 @@
       ]
     },
     {
+      "text": "Differential Guidance",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "Differential Guidance Diagram",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "Differential Guidance Scale",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
     },
     {
+      "text": "Differential Guidance will amplify the difference of the model prediction and the target during training to make a new target. Differential Guidance Scale will be the multiplier for the difference. This is still experimental, but in my tests, it makes the model train faster, and learns details better in every scenario I have tried with it.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "Differential Output Preservation",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "Differential Output Preservation (DOP) is a technique to help preserve class of the trained concept during training. For this, you must have a trigger word set to differentiate your concept from its class. For instance, You may be training a woman named Alice. Your trigger word may be \"Alice\". The class is \"woman\", since Alice is a woman. We want to teach the model to remember what it knows about the class \"woman\" while teaching it what is different about Alice. During training, the trainer will make a prediction with your LoRA bypassed and your trigger word in the prompt replaced with the class word. Making \"photo of Alice\" become \"photo of woman\". This prediction is called the prior prediction. Each step, we will do the normal training step, but also do another step with this prior prediction and the class prompt in order to teach our LoRA to preserve the knowledge of the class. This should not only improve the performance of your trained concept, but also allow you to do things like \"Alice standing next to a woman\" and not make both of the people look like Alice.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -1375,7 +1566,8 @@
     {
       "text": "Do Audio",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -1387,7 +1579,8 @@
     {
       "text": "Do I2V",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -1498,6 +1691,12 @@
       "text": "e.g. keep it a close-up portrait, prefer a daytime setting, always include a 9:16 vertical framing...",
       "files": [
         "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Each dataset keeps its own settings (captions, control images, repeats, flips, scale, resolution). Datasets whose settings would not collate into one batch (for example a different number of control images, video vs image, or different caching) are automatically kept in separate buckets within the pool. All pooled datasets must use the same batch size.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -1834,9 +2033,27 @@
       ]
     },
     {
+      "text": "Example:",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "Example: Setting this to 81 and having 2 videos in your dataset, one is 2 seconds and one is 90 seconds long, will result in 81 evenly spaced frames for each video making the 2 second video appear slow and the 90second video appear very fast.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "Expands the idea — places the subject in a scene and adds fitting details.",
       "files": [
         "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Experimental)",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -1932,6 +2149,12 @@
       ]
     },
     {
+      "text": "Flip X and Flip Y",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "Flip Y",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
@@ -1969,15 +2192,46 @@
       ]
     },
     {
+      "text": "For contrastive guidance loss, this is the target CGF to amplify predictions to.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "For low vram settings, the model not being trained will be unloaded from the gpu to save memory. This takes some time to do, so it is recommended to alternate less often when using low vram. A setting like 10 or 20 is recommended for low vram settings.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "For models that support audio with video, this option will load the audio from the video and resize it to match the video sequence. Since the video is automatically resized, the audio may drop or raise in pitch to match the new speed of the video. It is important to prep your dataset to have the proper length before training.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "For multi control datasets, the controls will all be applied in the order they are listed. If the model does not require the images to be the same aspect ratios, such as with Qwen/Qwen-Image-Edit-2509, then the control images do not need to match the aspect size or aspect ratio of the target image and they will be automatically resized to the ideal resolutions for the model / target images.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "For this model",
       "files": [
         "ui\\src\\components\\generate\\LoraBrowserModal.tsx"
       ]
     },
     {
+      "text": "For video models that can handle both I2V (Image to Video) and T2V (Text to Video), this option sets this dataset to be trained as an I2V dataset. This means that the first frame will be extracted from the video and used as the start image for the video. If this option is not set, the dataset will be treated as a T2V dataset.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "Force First Sample",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -2060,7 +2314,8 @@
       "text": "GPU ID",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
-        "ui\\src\\components\\CaptionSimpleJob.tsx"
+        "ui\\src\\components\\CaptionSimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -2096,7 +2351,8 @@
     {
       "text": "Guidance Loss Target",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -2203,6 +2459,12 @@
       ]
     },
     {
+      "text": "img01.txt",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "Import Config",
       "files": [
         "ui\\src\\app\\jobs\\new\\page.tsx"
@@ -2227,9 +2489,27 @@
       ]
     },
     {
+      "text": "inserts",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "inserts the contents of",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "Is Regularization",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "It is best to trim your videos to the proper length before training. Wan is 16 frames a second. Doing 81 frames will result in a 5 second video. So you would want all of your videos trimmed to around 5 seconds for best results.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -2273,7 +2553,8 @@
     {
       "text": "KV Cache",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -2304,7 +2585,14 @@
       "text": "Layer Offloading",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
-        "ui\\src\\components\\CaptionSimpleJob.tsx"
+        "ui\\src\\components\\CaptionSimpleJob.tsx",
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "Layer Offloading uses the CPU RAM instead of the GPU ram to hold most of the model weights. This allows training a much larger model on a smaller GPU, assuming you have enough CPU RAM. This is slower than training on pure GPU RAM, but CPU RAM is cheaper and upgradeable. You will still need GPU RAM to hold the optimizer states and LoRA weights, so a larger card is usually still needed.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -2340,7 +2628,8 @@
     {
       "text": "LLM Prompt",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -2519,7 +2808,8 @@
     {
       "text": "Match Target Res",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -2711,6 +3001,24 @@
       ]
     },
     {
+      "text": "MTP Draft Depth",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "MTP Speculative Decoding",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Multi Control Dataset",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "multiline",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
@@ -2733,7 +3041,8 @@
       "files": [
         "ui\\src\\app\\generate\\page.tsx",
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
-        "ui\\src\\components\\CaptionSimpleJob.tsx"
+        "ui\\src\\components\\CaptionSimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -2852,6 +3161,12 @@
       ]
     },
     {
+      "text": "Normally every dataset is loaded as its own unit with its own buckets, so each batch is built from a single dataset and each dataset keeps its own loader threads. With many datasets this means batches never mix images from different folders and the number of loader threads grows with the dataset count.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "Notes - #",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
@@ -2872,13 +3187,26 @@
     {
       "text": "Num Repeats",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
       "text": "number",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Number of Frames",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "Number of Repeats will allow you to repeate the items in a dataset multiple times. This is useful when you are using multiple datasets and want to balance the number of samples from each dataset. For instance, if you have a small dataset of 10 images and a large dataset of 100 images, you can set the small dataset to have 10 repeats to effectively make it 100 images, making the two datasets occour equally during training.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -2916,6 +3244,12 @@
       "files": [
         "ui\\src\\app\\generate\\page.tsx",
         "ui\\src\\components\\UpsamplePromptsModal.tsx"
+      ]
+    },
+    {
+      "text": "Off by default. Only useful when you have numerous datasets.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -2959,6 +3293,18 @@
       "text": "Optimizer",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Optional system message",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Optional: This will be the word or token used to trigger your concept or character.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -3037,9 +3383,34 @@
       ]
     },
     {
+      "text": "placeholder in your captions. This will be automatically replaced with your trigger word.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "placeholder in your test prompts as well.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "Plot stride",
       "files": [
         "ui\\src\\components\\JobLossGraph.tsx"
+      ]
+    },
+    {
+      "text": "Pool Datasets",
+      "files": [
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "Pooling merges all of your datasets into one shared set of buckets. Images from different folders that land in the same bucket are mixed together in the same batch, and only one set of loader threads is used for the whole pool. Regularization datasets are pooled separately from your training datasets, never together.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -3224,6 +3595,12 @@
       ]
     },
     {
+      "text": "Qwen/Qwen3.8-27B (bf16, quantized on load)",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
       "text": "Qwen2.5-Omni",
       "files": [
         "ui\\src\\helpers\\captionOptions.ts"
@@ -3239,6 +3616,18 @@
       "text": "Qwen3-VL",
       "files": [
         "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "Qwen3.8 27B",
+      "files": [
+        "ui\\src\\helpers\\captionOptions.ts"
+      ]
+    },
+    {
+      "text": "RamTorch",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -3327,6 +3716,12 @@
       "text": "Restart",
       "files": [
         "ui\\src\\components\\AudioPlayer.tsx"
+      ]
+    },
+    {
+      "text": "Rewrite this caption as a single sentence: <caption.txt>",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -3626,7 +4021,13 @@
       ]
     },
     {
-      "text": "Some models support loading ComfyUI model weights directly. Models that do will be loaded\r\n                      from/downloaded to this path. Must be an absolute path. If blank, it will default to the models\r\n                      folder in the project root.",
+      "text": "Some models have multi stage networks that are trained and used separately in the denoising process. Most common, is to have 2 stages. One for high noise and one for low noise. You can choose to train both stages at once or train them separately. If trained at the same time, The trainer will alternate between training each model every so many steps and will output 2 different LoRAs. If you choose to train only one stage, the trainer will only train that stage and output a single LoRA.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "Some models support loading ComfyUI model weights directly. Models that do will be loaded from/downloaded to this path. Must be an absolute path. If blank, it will default to the models folder in the project root.",
       "files": [
         "ui\\src\\app\\settings\\page.tsx"
       ]
@@ -3646,7 +4047,8 @@
     {
       "text": "Stages to Train",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -3773,9 +4175,21 @@
       ]
     },
     {
+      "text": "Switch Boundary Every",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "Switch Every",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "System Prompt",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
       ]
     },
     {
@@ -3847,9 +4261,51 @@
       ]
     },
     {
+      "text": "The control dataset needs to have files that match the filenames of your training dataset. They should be matching file pairs. These images are fed as control/input images during training.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "The control dataset needs to have files that match the filenames of your training dataset. They should be matching file pairs. These images are fed as control/input images during training. The control images will be resized to match the training images.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "The engine is starting. Model options appear once its server is up.",
       "files": [
         "ui\\src\\app\\generate\\page.tsx"
+      ]
+    },
+    {
+      "text": "The idea is that normal training inches closer to the target but never actually gets there, because it is limited by the learning rate. With differential guidance, we amplify the difference for a new target beyond the actual target, this would make the model learn to hit or overshoot the target instead of falling short.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "The instruction sent to the captioning model for every file. It can contain special tokens that are replaced per file before the prompt is sent:",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "The instruction the model is asked for every training item, as the user turn of the chat. The item's caption file is the answer it learns to give. Use the same wording when running the trained LoRA, and it is also what samples use when their own prompt is left blank.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "The name of a diffusers repo on Huggingface or the local path to the base model you want to train from. The folder needs to be in diffusers format for most models. For some models, such as SDXL and SD1, you can put the path to an all in one safetensors checkpoint here.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "The name of the training job. This name will be used to identify the job in the system and will the the filename of the final model. It must be unique and can only contain alphanumeric characters, underscores, and dashes. No spaces or special characters are allowed.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -3865,27 +4321,75 @@
       ]
     },
     {
+      "text": "The swap happens at the batch level, meaning it will swap between a gradient accumulation steps. To train both stages in a single step, set them to switch every 1 step and set gradient accumulation to 2.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "Thinking",
       "files": [
         "ui\\src\\components\\CaptionSimpleJob.tsx"
       ]
     },
     {
-      "text": "This loads a model and runs on the GPU. You need at least 13GB of free VRAM to run this, so make sure the\r\n            GPU is idle (no training or other jobs running) before starting, or it may run out of memory.",
+      "text": "This is an experimental feature based on",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "This is the GPU that will be used for training. Only one GPU can be used per job at a time via the UI currently. However, you can start multiple jobs in parallel, each using a different GPU.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "This loads a model and runs on the GPU. You need at least 13GB of free VRAM to run this, so make sure the GPU is idle (no training or other jobs running) before starting, or it may run out of memory.",
       "files": [
         "ui\\src\\components\\UpsamplePromptsModal.tsx"
       ]
     },
     {
-      "text": "This model is gated on Huggingface. Before you can use it, you will need to accept the model\r\n                            terms on the model page:",
+      "text": "This model is gated on Huggingface. Before you can use it, you will need to accept the model terms on the model page:",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "This option will force the trainer to generate samples when it starts. The trainer will normally only generate a first sample when nothing has been trained yet, but will not do a first sample when resuming from an existing checkpoint. This option forces a first sample every time the trainer is started. This can be useful if you have changed sample prompts and want to see the new prompts right away.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "This sets the number of frames to shrink videos to for a video dataset. If this dataset is images, set this to 1 for one frame. If your dataset is only videos, frames will be extracted evenly spaced from the videos in the dataset.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "This setting will make the control images match the resolution of the target image. The official inference example for Qwen-Image-Edit-2509 feeds the control image is at 1MP resolution, no matter what size you are generating. Doing this makes training at lower res difficult because 1MP control images are fed in despite how large your target image is. Match Target Res will match the resolution of your target to feed in the control images allowing you to use less VRAM when training with smaller resolutions. You can still use different aspect ratios, the image will just be resizes to match the amount of pixels in the target image.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "This will automatically determine the number of frames to use for each video in your dataset instead of relying on a fixed num_frames. This allows you to include videos of different lengths in the dataset, and each video will be processed without speeding up or slowing down. Be careful about adding long videos into your dataset, as they use up more VRAM. This currently will not work with a batch size greater than 1.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
       "text": "This will create a new folder with the name below in your dataset folder.",
       "files": [
         "ui\\src\\app\\datasets\\page.tsx"
+      ]
+    },
+    {
+      "text": "This will enable KV Cache for control images in a model that supports it. LoRAs trained with this on need to also be inferenced with it, and vice versa. This does not speed up or slow down training, but on inference, the control images only need to be processed once for the entire generation, vs being processed for every step. Which leads to a significant speedup on inference.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -3965,7 +4469,8 @@
     {
       "text": "Training Name",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -3996,7 +4501,14 @@
     {
       "text": "Trigger Word",
       "files": [
-        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+        "ui\\src\\app\\jobs\\new\\SimpleJob.tsx",
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "Trigger words will not automatically be added to your test prompts, so you will need to either add your trigger word manually or use the",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -4035,6 +4547,18 @@
       "text": "Unload TE",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "Unload Text Encoder",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "Unloading text encoder will cache the trigger word and the sample prompts and unload the text encoder from the GPU. Captions in for the dataset will be ignored",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {
@@ -4191,7 +4715,7 @@
       ]
     },
     {
-      "text": "Validation runs a stable loss check on a fixed set of images. Each image is encoded once at startup\r\n                    and predicted at the selected sigmas with fixed seeds, so the result is always deterministic and\r\n                    comparable across the run. The average loss is logged as val/loss every time validation runs. The\r\n                    images need to match the concept of your dataset, but",
+      "text": "Validation runs a stable loss check on a fixed set of images. Each image is encoded once at startup and predicted at the selected sigmas with fixed seeds, so the result is always deterministic and comparable across the run. The average loss is logged as val/loss every time validation runs. The images need to match the concept of your dataset, but",
       "files": [
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
       ]
@@ -4209,9 +4733,21 @@
       ]
     },
     {
+      "text": "Video FPS",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
+      ]
+    },
+    {
       "text": "View All",
       "files": [
         "ui\\src\\app\\dashboard\\page.tsx"
+      ]
+    },
+    {
+      "text": "Vision Tower bf16",
+      "files": [
+        "ui\\src\\components\\CaptionSimpleJob.tsx"
       ]
     },
     {
@@ -4221,7 +4757,7 @@
       ]
     },
     {
-      "text": "Waiting for the GPU queue to pick the job up. If the queue is stopped, start it from the Queue\r\n                      page or cancel here.",
+      "text": "Waiting for the GPU queue to pick the job up. If the queue is stopped, start it from the Queue page or cancel here.",
       "files": [
         "ui\\src\\app\\generate\\page.tsx"
       ]
@@ -4233,7 +4769,7 @@
       ]
     },
     {
-      "text": "Warning: This software may modify datasets so it is recommended you keep a backup somewhere else\r\n                        or have a dedicated folder for this software.",
+      "text": "Warning: This software may modify datasets so it is recommended you keep a backup somewhere else or have a dedicated folder for this software.",
       "files": [
         "ui\\src\\app\\settings\\page.tsx"
       ]
@@ -4245,7 +4781,7 @@
       ]
     },
     {
-      "text": "We will store your training information here. Must be an absolute path. If blank, it will default\r\n                      to the output folder in the project root.",
+      "text": "We will store your training information here. Must be an absolute path. If blank, it will default to the output folder in the project root.",
       "files": [
         "ui\\src\\app\\settings\\page.tsx"
       ]
@@ -4263,6 +4799,36 @@
       ]
     },
     {
+      "text": "When loading audio to match the number of frames requested, this option will preserve the pitch of the audio if the length does not match training target. It is recommended to have a dataset that matches your target length, as this option can add sound distortions.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "When loading audio, this will normalize the audio volume to the max peaks. Useful if your dataset has varying audio volumes. Warning, do not use if you have clips with full silence you want to keep, as it will raise the volume of those clips.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "When training a model with multiple stages, this setting controls how often the trainer will switch between training each stage.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "When training audio and video, sometimes the video loss is so great that it outweights the audio loss, causing the audio to become distorted. If you are noticing this happen, you can increase the audio loss multiplier to give more weight to the audio loss. You could try something like 2.0, 10.0 etc. Warning, setting this too high could overfit and damage the model.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "When using a trigger word, If your captions do not contain the trigger word, it will be added automatically the beginning of the caption. If you do not have captions, the caption will become just the trigger word. If you want to have variable trigger words in your captions to put it in different spots, you can use the",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
       "text": "Where we store and find your datasets.",
       "files": [
         "ui\\src\\app\\settings\\page.tsx"
@@ -4273,6 +4839,18 @@
       "files": [
         "ui\\src\\app\\generate\\page.tsx",
         "ui\\src\\app\\jobs\\new\\SimpleJob.tsx"
+      ]
+    },
+    {
+      "text": "You can also select the percentage of the layers to offload. It is generally best to offload as few as possible (close to 0%) for best performance, but you can offload more if you need the memory.",
+      "files": [
+        "ui\\src\\docs.tsx"
+      ]
+    },
+    {
+      "text": "You can augment your dataset on the fly by flipping the x (horizontal) and/or y (vertical) axis. Flipping a single axis will effectively double your dataset. It will result it training on normal images, and the flipped versions of the images. This can be very helpful, but keep in mind it can also be destructive. There is no reason to train people upside down, and flipping a face can confuse the model as a person's right side does not look identical to their left side. For text, obviously flipping text is not a good idea.",
+      "files": [
+        "ui\\src\\docs.tsx"
       ]
     },
     {

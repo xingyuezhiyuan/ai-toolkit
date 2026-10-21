@@ -11,8 +11,6 @@ const REPO = path.resolve(__dirname, '..', '..');
 const ts = require(path.join(REPO, 'ui', 'node_modules', 'typescript'));
 
 const SRC = path.join(REPO, 'ui', 'src');
-// Embedded docs are deliberately phase 2 (ADR-0002) — keep them out of the base table.
-const SKIP_FILES = new Set(['docs.tsx']);
 // Only collect from positions that can render into the DOM as visible text —
 // a string anywhere else (module paths, classNames, config keys) is noise.
 const ATTRS = new Set(['placeholder', 'title', 'alt', 'aria-label', 'label', 'instruction']);
@@ -20,13 +18,15 @@ const PROP_NAMES = new Set(['title', 'message', 'instruction', 'label', 'text', 
 
 const found = new Map(); // trimmed text -> Set(relfile)
 
-const ENTITIES = { '&nbsp;': '\u00a0', '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'" };
+const ENTITIES = { '&nbsp;': '\u00a0', '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'", '&apos;': "'" };
 function decodeEntities(s) {
-  return s.replace(/&nbsp;|&amp;|&lt;|&gt;|&quot;|&#39;/g, m => ENTITIES[m]);
+  return s.replace(/&nbsp;|&amp;|&lt;|&gt;|&quot;|&#39;|&apos;/g, m => ENTITIES[m]);
 }
 
 function add(raw, file) {
-  const t = decodeEntities(raw.trim());
+  // React collapses JSX text whitespace (newlines + indentation -> single space),
+  // so the dictionary key must match the rendered DOM text, not the source layout.
+  const t = decodeEntities(raw).replace(/\s+/g, ' ').trim();
   if (!t || !/[A-Za-z]{2}/.test(t)) return;
   if (!found.has(t)) found.set(t, new Set());
   found.get(t).add(path.relative(REPO, file));
@@ -88,7 +88,7 @@ function walkDir(dir) {
     if (st.isDirectory()) {
       if (e === 'i18n' || e === 'node_modules' || e === '.next' || e.startsWith('__')) continue;
       walkDir(p);
-    } else if (/\.tsx?$/.test(e) && !SKIP_FILES.has(e)) parseFile(p);
+    } else if (/\.tsx?$/.test(e)) parseFile(p);
   }
 }
 
