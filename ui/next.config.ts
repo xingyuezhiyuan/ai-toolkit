@@ -10,7 +10,11 @@ const nextConfig: NextConfig = {
   env: {
     NEXT_PUBLIC_APP_VERSION: appVersion,
   },
-  serverExternalPackages: ['macstats', 'osx-temperature-sensor'],
+  serverExternalPackages: [
+    'macstats',
+    'osx-temperature-sensor',
+    'macos-temperature-sensor',
+  ],
   async rewrites() {
     return [
       {
@@ -21,7 +25,11 @@ const nextConfig: NextConfig = {
   },
   webpack: (config, { isServer }) => {
     if (isServer) {
-      config.externals.push('osx-temperature-sensor', 'macstats');
+      config.externals.push(
+        'osx-temperature-sensor',
+        'macos-temperature-sensor',
+        'macstats',
+      );
     }
     return config;
   },
