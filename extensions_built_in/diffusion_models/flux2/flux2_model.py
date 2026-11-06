@@ -414,7 +414,12 @@ class Flux2Model(BaseModel):
         return noise_pred
 
     def get_prompt_embeds(self, prompt: str) -> PromptEmbeds:
-        if self.pipeline.text_encoder.device != self.device_torch:
+        # only move when the encoder is actually parked on the cpu. A quantized
+        # encoder (.to() on the same device included) swaps every parameter via
+        # torch.utils.swap_tensors, which raises "Couldn't swap QLinear.weight"
+        # as soon as the parameters carry an extra reference (e.g. after an
+        # out-of-memory retry during caching).
+        if self.pipeline.text_encoder.device.type == "cpu":
             self.pipeline.text_encoder.to(self.device_torch)
 
         prompt_embeds, prompt_embeds_mask = self.pipeline.encode_prompt(

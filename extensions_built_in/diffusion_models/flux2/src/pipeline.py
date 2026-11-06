@@ -188,12 +188,18 @@ class Flux2Pipeline(DiffusionPipeline):
         input_ids = torch.cat(all_input_ids, dim=0).to(device)
         attention_mask = torch.cat(all_attention_masks, dim=0).to(device)
 
-        output = self.text_encoder(
-            input_ids=input_ids,
-            attention_mask=attention_mask,
-            output_hidden_states=True,
-            use_cache=False,
-        )
+        # only the hidden states below are used, so call the inner Qwen3 model
+        # directly: the CausalLM wrapper would additionally project the whole
+        # batch through lm_head, materialising a (batch, 512, 151936) logits
+        # tensor (~2.5 GiB for a batch of 16) that is thrown away immediately.
+        encoder = getattr(self.text_encoder, "model", self.text_encoder)
+        with torch.no_grad():
+            output = encoder(
+                input_ids=input_ids,
+                attention_mask=attention_mask,
+                output_hidden_states=True,
+                use_cache=False,
+            )
 
         out = torch.stack([output.hidden_states[k] for k in OUTPUT_LAYERS_QWEN3], dim=1)
         prompt_embeds = rearrange(out, "b c l d -> b l (c d)")
