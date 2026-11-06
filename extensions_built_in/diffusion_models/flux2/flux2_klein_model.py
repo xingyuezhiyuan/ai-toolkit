@@ -1,3 +1,5 @@
+import os
+
 from .flux2_model import Flux2Model
 from transformers import Qwen3ForCausalLM, Qwen2Tokenizer
 from toolkit.models.v2.text_encoders.qwen3 import Qwen3TextEncoder
@@ -38,13 +40,34 @@ class Flux2KleinModel(Flux2Model):
         dtype = self.torch_dtype
         self.print_and_status_update("Loading Qwen3")
 
+        # explicit te_name_or_path wins; otherwise use the Qwen3 bundled in a
+        # local full checkpoint (text_encoder/ next to the transformer file)
+        te_path = self.model_config.te_name_or_path
+        if te_path is None:
+            local_path = self.model_config.name_or_path
+            if os.path.isdir(os.path.join(local_path, "text_encoder")):
+                te_path = local_path
+            else:
+                te_path = self.flux2_klein_te_path
+
         # load + quantize + offload + placement, all driven by model_config
+        # a full checkpoint keeps the weights under text_encoder/ (let the
+        # class's aitk_subfolder resolve it); a plain repo/file loads as-is
+        te_subfolder = ""
+        if os.path.isdir(os.path.join(te_path, "text_encoder")):
+            te_subfolder = None
         text_encoder = Qwen3TextEncoder.load(
-            self.flux2_klein_te_path, subfolder="", **self.component_load_kwargs("te")
+            te_path, subfolder=te_subfolder, **self.component_load_kwargs("te")
         )
         flush()
 
-        tokenizer = Qwen2Tokenizer.from_pretrained(self.flux2_klein_te_path)
+        # a full checkpoint keeps the tokenizer in its own subfolder
+        tokenizer_subfolder = ""
+        if os.path.isdir(os.path.join(te_path, "tokenizer")):
+            tokenizer_subfolder = "tokenizer"
+        tokenizer = Qwen2Tokenizer.from_pretrained(
+            te_path, subfolder=tokenizer_subfolder
+        )
         return text_encoder, tokenizer
 
 
