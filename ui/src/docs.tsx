@@ -215,6 +215,17 @@ const docs: { [key: string]: ConfigDoc } = {
       </>
     ),
   },
+  'model.low_vram': {
+    title: 'Low VRAM',
+    description: (
+      <>
+        This option keeps the model weights in CPU memory while loading and quantizing, only moving them to the GPU
+        block by block for the math. This lowers peak VRAM usage during loading, at the cost of slower loading and
+        quantizing. Use it when you are close to your GPU&apos;s VRAM limit or the GPU is also driving your monitors.
+        Training still needs enough VRAM to hold the optimizer states and LoRA weights.
+      </>
+    ),
+  },
   'model.layer_offloading': {
     title: (
       <>

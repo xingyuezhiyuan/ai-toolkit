@@ -436,6 +436,7 @@ export default function SimpleJob({
               <FormGroup label="Options">
                 <Checkbox
                   label="Low VRAM"
+                  docKey="model.low_vram"
                   checked={jobConfig.config.process[0].model.low_vram}
                   onChange={value => setJobConfig(value, 'config.process[0].model.low_vram')}
                 />
