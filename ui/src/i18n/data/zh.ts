@@ -571,6 +571,28 @@ const zh: Dict = {
     'System Prompt': '系统 Prompt',
     'Video FPS': '视频 FPS',
     'Vision Tower bf16': '视觉塔 bf16',
+    // --- MiniMax-H3-Image model notes (upstream merge 2026-11) ---
+    // Rendered from extensions_built_in/diffusion_models/ui.tsx modelNotes; keys are the
+    // split DOM text nodes (inline <code> spans stay English per ADR-0002).
+    'MiniMax-H3-Image is the MiniMax-H3 DiT without its audio stream, distilled to 6 steps with no CFG, for text-to-image and image editing. Without control images it trains and samples as text-to-image. With control images each one is a reference the prompt names as':
+      'MiniMax-H3-Image 是去掉音频流的 MiniMax-H3 DiT，蒸馏为 6 步且不使用 CFG，用于文生图和图像编辑。没有控制图时按文生图方式训练和采样；有控制图时，每张图都是一个参考，prompt 中以',
+    ', ...: it rides into the packed sequence as a reference block and is shown to the Qwen3-VL conditioner at a 1024 short edge. References keep their own size instead of following the target: the encoded copy has its short edge inside 1024 to 2048 (':
+      ', ... 的形式指定：它作为参考块进入打包序列，并以 1024 短边呈现给 Qwen3-VL 条件器。参考图保持自身尺寸而不跟随目标：编码副本的短边限制在 1024 到 2048（',
+    '). Sample ctrl images work the same way. The prompt is used as written, so describe the whole image in detail.':
+      '）。样例控制图也是同样的处理方式。prompt 按原文使用，因此请详细描述整张图片。',
+    'Weights load from the': '权重从',
+    'in the ComfyUI layout; anything missing is downloaded there from':
+      '加载，采用 ComfyUI 目录结构；缺失的文件会自动从',
+    '(~38GB for the default set). The text encoder is the MiniMax-H3 one, so an existing copy is reused. Files used with the default quantization:':
+      '下载到该处（默认文件集约 38GB）。文本编码器沿用 MiniMax-H3 的版本，已有副本可直接复用。默认量化使用的文件：',
+    'The default qtypes load those files as shipped. Transformer qtype':
+      '默认 qtype 会按原样加载这些文件。Transformer 的 qtype',
+    'loads the 4-bit': '会加载 4-bit 的',
+    'file, text encoder qtype': '文件，文本编码器 qtype',
+    'the int8 text encoder, and any other transformer qtype quantizes the bf16 file. The transformer has one output head per sampling step on its own 6-step sigma grid, so keep sample steps at 6 and guidance scale at 1. Training draws only those six sampling timesteps, each through its own head, so the Timestep Type setting has no effect. It is trained for 4 MP to 20 MP output (2048×2048 up to 4096×4096, 5472×3072, ...); lower resolutions show more artifacts. The model is step and guidance distilled, so training runs with the MiniMax-H3-Image training adapter (':
+      '会加载 int8 文本编码器，其他任何 transformer qtype 都会量化 bf16 文件。该 Transformer 在自身的 6 步 sigma 网格上为每个采样步提供一个输出头，因此请保持采样步数为 6、引导强度为 1。训练只会抽取这六个采样时间步，并分别通过各自的头，因此时间步类型设置不会生效。它针对 4 MP 到 20 MP 的输出训练（2048×2048 至 4096×4096、5472×3072……），分辨率更低时瑕疵更明显。该模型经过步数与引导蒸馏，因此训练时默认以 MiniMax-H3-Image 训练适配器（',
+    ') as a live assistant LoRA by default; the sampler turns it off for previews. Audio and video are not supported.':
+      '）作为实时 assistant LoRA 运行；采样器会在预览时将其关闭。不支持音频和视频。',
   },
   templates: {
     // --- dynamic slots: "#" (quoted phrase) / "#" (number), backfilled into {0},{1}.. ---
